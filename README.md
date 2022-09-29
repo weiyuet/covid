@@ -1,9 +1,9 @@
 ## covid
 
-Epidemic curve in Singapore
+Epidemic Curve in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-epidemic-curve-sg.png)
 
-Total cumulative cases in Singapore
+Total Cumulative Cases in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-cumulative-sg.png)
 
 Data:
