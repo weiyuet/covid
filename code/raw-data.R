@@ -17,7 +17,7 @@ sg_data <- tidy_data %>%
 
 sg_data %>% 
   ggplot(aes(x = date, y = values)) +
-  geom_step() +
+  geom_line() +
   scale_x_date(
     labels = label_date_short(),
     date_breaks = "3 months") +
