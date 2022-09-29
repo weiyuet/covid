@@ -1,0 +1,207 @@
+# Metadata for COVID-19 Case Numbers
+---
+Identifier: '76abf3e8-2951-43e9-9a23-c19bf0f4bc44'
+Name: 'covid-19-case-numbers'
+Title: 'COVID-19 Case Numbers'
+Description: 'Data on COVID-19 cases'
+Topics:
+  - 'Health'
+Keywords:
+  - 'health'
+Publisher:
+  Name: 'Ministry of Health'
+  Admin 1:
+    Name: 'admin'
+    Department: 'OGP'
+    Email: 'admin@data.gov.sg'
+Sources:
+  - 'Ministry of Health'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Ad-hoc'
+Coverage: '2020-01-23 to 2022-09-28'
+Last Updated: '2022-09-28T16:00:58.637454'
+Resources:
+  -
+    Identifier: '9de30d8d-3c0d-48ab-8c1b-4a7dc03d687a'
+    Title: 'Patients Needing Oxygen Supplementation, ICU Care or Died, by Age Groups'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/patients-needing-oxygen-supplementation-icu-care-or-died-by-age-groups-2022-09-28T15-53-57Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-09-01 to 2022-09-28'
+    Last Updated: '2022-09-28T15:53:57.550783'
+    Schema:
+      -
+        Name: 'day_of_as_of_date'
+        Title: 'Day of as of date'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'age_groups'
+        Title: 'Age groups'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'clinical_status'
+        Title: 'Clinical status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'count_of_case'
+        Title: 'Count of case'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'No. of cases'
+  -
+    Identifier: '6c14814b-09b7-408e-80c4-db3d393c7c15'
+    Title: 'Number of Local Cases by Age'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/number-of-local-cases-by-age-2022-09-28T15-54-11Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-09-01 to 2022-09-28'
+    Last Updated: '2022-09-28T15:54:11.487707'
+    Schema:
+      -
+        Name: 'pr_date'
+        Title: 'Press Release Date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'age_group'
+        Title: 'Age group'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'count_of_case'
+        Title: 'Count of case'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'No. of cases'
+  -
+    Identifier: '99334c54-479f-472d-a6f5-fe38d2f9b1aa'
+    Title: 'Week on Week Infection Ratio'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/week-on-week-infection-ratio-2022-09-28T15-55-55Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-07-29 to 2022-09-28'
+    Last Updated: '2022-09-28T15:55:55.678681'
+    Schema:
+      -
+        Name: 'pr_date'
+        Title: 'Pr date'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'ratio_comm_cases_pw_over_wb'
+        Title: 'Ratio'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Ratio'
+  -
+    Identifier: '783f0c4c-caf7-4818-8683-760f3d7f0757'
+    Title: 'Moving ave of deaths & active cases in ICU, per 100k population, by vax
+      status'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/moving-ave-of-deaths-active-cases-in-icu-per-100k-population-by-vax-status-2022-09-28T15-56-53Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-09-01 to 2022-09-28'
+    Last Updated: '2022-09-28T15:56:53.629507'
+    Schema:
+      -
+        Name: 'as_of_date'
+        Title: 'As of date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'clinicalstatus'
+        Title: 'Clinicalstatus'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'vaccination_status'
+        Title: 'Vaccination status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'count_of_case'
+        Title: 'Count of case'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Cases'
+  -
+    Identifier: 'aa6ba85e-c256-4eef-99ca-7849c7d6f148'
+    Title: 'Moving ave of deaths & active cases in ICU, per 100k population, by vax
+      status (detailed)'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/moving-ave-of-deaths-active-cases-in-icu-per-100k-population-by-vax-status-detailed-2022-09-28T15-57-44Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-08-31 to 2022-09-27'
+    Last Updated: '2022-09-28T15:57:44.710287'
+    Schema:
+      -
+        Name: 'as_of_date'
+        Title: 'As of date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'clinicalstatus'
+        Title: 'Clinical Status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'vaccination_status'
+        Title: 'Vaccination Status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'count_of_case'
+        Title: 'Count of case'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Case'
+  -
+    Identifier: 'b5ae6ad5-1272-41f4-a4e5-23308ad6e32d'
+    Title: 'Daily Adult ICU Bed Utilisation'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/daily-adult-icu-bed-utilisation-2022-09-28T15-58-58Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-09-01 to 2022-09-28'
+    Last Updated: '2022-09-28T15:58:58.709511'
+    Schema:
+      -
+        Name: 'as_of_date'
+        Title: 'As of date'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'status'
+        Title: 'Status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'ICU Beds'
+  -
+    Identifier: '400a3eb4-8702-4050-9700-988bfea7a20f'
+    Title: 'Epidemic Curve'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/epidemic-curve-2022-09-28T16-00-18Z.csv'
+    Format: 'CSV'
+    Coverage: '2020-01-23 to 2022-09-28'
+    Last Updated: '2022-09-28T16:00:18.866215'
+    Schema:
+      -
+        Name: 'date'
+        Title: 'Date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'type'
+        Title: 'Type'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Cases'
