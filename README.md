@@ -7,10 +7,10 @@ Data:
   
   - [`Google Covid-19 Open Data`](https://health.google.com/covid-19/open-data)
   
-Epidemic Curve in Singapore
+### Epidemic Curve in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-epidemic-curve-sg.png)
 
-Total Cumulative Cases in Singapore
+### Total Cumulative Cases in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-cumulative-sg.png)
 
 EOL
