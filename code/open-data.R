@@ -4,7 +4,7 @@ library(scales)
 library(glue)
 
 # Load data
-raw_data <- read_csv("https://storage.googleapis.com/covid19-open-data/v3/epidemiology.csv")
+open_data <- read_csv("https://storage.googleapis.com/covid19-open-data/v3/epidemiology.csv")
 
 # Data to tidy format
 tidy_data <- raw_data %>%

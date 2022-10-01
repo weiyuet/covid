@@ -15,6 +15,7 @@ vaccination_data %>%
   scale_x_continuous(expand = c(0, 0),
                      breaks = seq(0, 120, 20)) +
   theme_classic() +
+  theme(axis.text.y = element_blank()) +
   labs(x = "", y = "",
        title = "Persons Fully Vaccinated per 100 Population",
        caption = "Data: WHO")

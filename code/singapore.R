@@ -25,5 +25,4 @@ epidemic_curve %>%
        subtitle = "Three major waves of infection in Singapore",
        caption = "Data: data.gov.sg")
 
-# Save png
 ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 4.5)
