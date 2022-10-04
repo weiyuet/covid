@@ -21,7 +21,7 @@ epidemic_curve %>%
   theme(legend.position = c(0.25, 0.55)) +
   labs(x = "", y = "",
        colour = "",
-       title = "Covid-19 Epidemic Curve",
+       title = "COVID-19 Epidemic Curve",
        subtitle = "Three major waves of infection in Singapore",
        caption = "Data: data.gov.sg")
 

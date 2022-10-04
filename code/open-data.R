@@ -17,7 +17,7 @@ sg_data <- tidy_data %>%
 
 sg_data %>% 
   ggplot(aes(x = date, y = values)) +
-  geom_line() +
+  geom_step() +
   scale_x_date(
     expand = c(0.01, 0),
     labels = label_date_short(),
@@ -34,8 +34,8 @@ sg_data %>%
   ) +
   theme_classic() +
   labs(x = "", y = "# of cumulative confirmed cases (log scale)",
-       title = glue("Covid-19 in Singapore - Cumulative Cases as of {max(sg_data$date)}"),
+       title = glue("COVID-19 in Singapore - Cumulative Cases as of {max(sg_data$date)}"),
        subtitle = "The first wave had the most number of exponential cases",
-       caption = "Data: Google Covid-19 Open Data")
+       caption = "Data: Google COVID-19 Open Data")
 
 ggsave("figures/covid-cumulative-sg.png", width = 8, height = 5)
