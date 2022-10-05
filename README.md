@@ -1,4 +1,4 @@
-## COVID EDA
+## covid EDA
 
 Data:
   - [`WHO`](https://covid19.who.int/data)
@@ -13,10 +13,7 @@ Data:
 ### Total Cumulative Cases in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-cumulative-sg.png)
 
-### Countries with Highest Vaccination Rates
-![](https://github.com/weiyuet/covid/blob/main/figures/highest-vaccination-rates.png)
-
-### Countries with Lowest Vaccination Rates
-![](https://github.com/weiyuet/covid/blob/main/figures/lowest-vaccination-rates.png)
+### Vaccination Rates
+![](https://github.com/weiyuet/covid/blob/main/figures/country-vaccination-rates.png)
 
 EOL
