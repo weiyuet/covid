@@ -35,7 +35,7 @@ vaccination_data %>%
        subtitle = "Persons Fully Vaccinated per 100 Population",
        caption = "Data: WHO | Graphic: @weiyuet")
 
-ggsave("figures/highest-vaccination-rates.png", width = 5.5, height = 7)
+ggsave("figures/highest-vaccination-rates.png", width = 5, height = 6)
 
 # Which countries have the lowest vaccination rates?
 vaccination_data %>%
@@ -63,4 +63,4 @@ vaccination_data %>%
        subtitle = "Persons Fully Vaccinated per 100 Population",
        caption = "Data: WHO | Graphic: @weiyuet")
 
-ggsave("figures/lowest-vaccination-rates.png", width = 5.5, height = 7)
+ggsave("figures/lowest-vaccination-rates.png", width = 5, height = 6)
