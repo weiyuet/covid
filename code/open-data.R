@@ -36,6 +36,6 @@ sg_data %>%
   labs(x = "", y = "# of cumulative confirmed cases (log scale)",
        title = glue("COVID-19 in Singapore - Cumulative Cases as of {max(sg_data$date)}"),
        subtitle = "The first wave had the most number of exponential cases",
-       caption = "Data: Google COVID-19 Open Data")
+       caption = "Data: Google COVID-19 Open Data | Graphic: @weiyuet")
 
 ggsave("figures/covid-cumulative-sg.png", width = 8, height = 5)

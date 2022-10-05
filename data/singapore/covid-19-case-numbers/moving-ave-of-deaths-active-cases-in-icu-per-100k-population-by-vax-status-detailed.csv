@@ -1,11 +1,4 @@
 as_of_date,clinicalstatus,vaccination_status,count_of_case
-2022-08-31,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
-2022-09-01,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
-2022-09-02,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
-2022-09-03,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
-2022-09-04,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
-2022-09-05,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
-2022-09-06,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
 2022-09-07,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
 2022-09-08,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
 2022-09-09,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
@@ -27,13 +20,13 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-09-25,Deceased (based on date of death),Fully Vaccinated (With Booster),0.0
 2022-09-26,Deceased (based on date of death),Fully Vaccinated (With Booster),0.0
 2022-09-27,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
-2022-08-31,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
-2022-09-01,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
-2022-09-02,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
-2022-09-03,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
-2022-09-04,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
-2022-09-05,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
-2022-09-06,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-09-28,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
+2022-09-29,Deceased (based on date of death),Fully Vaccinated (With Booster),0.0
+2022-09-30,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
+2022-10-01,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
+2022-10-02,Deceased (based on date of death),Fully Vaccinated (With Booster),0.01
+2022-10-03,Deceased (based on date of death),Fully Vaccinated (With Booster),0.02
+2022-10-04,Deceased (based on date of death),Fully Vaccinated (With Booster),0.02
 2022-09-07,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
 2022-09-08,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
 2022-09-09,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
@@ -55,115 +48,122 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-09-25,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
 2022-09-26,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
 2022-09-27,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
-2022-08-31,Deceased (based on date of death),Non-Fully Vaccinated,0.06
-2022-09-01,Deceased (based on date of death),Non-Fully Vaccinated,0.08
-2022-09-02,Deceased (based on date of death),Non-Fully Vaccinated,0.11
-2022-09-03,Deceased (based on date of death),Non-Fully Vaccinated,0.08
-2022-09-04,Deceased (based on date of death),Non-Fully Vaccinated,0.08
-2022-09-05,Deceased (based on date of death),Non-Fully Vaccinated,0.11
-2022-09-06,Deceased (based on date of death),Non-Fully Vaccinated,0.14
-2022-09-07,Deceased (based on date of death),Non-Fully Vaccinated,0.14
-2022-09-08,Deceased (based on date of death),Non-Fully Vaccinated,0.11
-2022-09-09,Deceased (based on date of death),Non-Fully Vaccinated,0.06
-2022-09-10,Deceased (based on date of death),Non-Fully Vaccinated,0.06
-2022-09-11,Deceased (based on date of death),Non-Fully Vaccinated,0.06
-2022-09-12,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-13,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-14,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-15,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-16,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-17,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-18,Deceased (based on date of death),Non-Fully Vaccinated,0.06
-2022-09-19,Deceased (based on date of death),Non-Fully Vaccinated,0.06
-2022-09-20,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-21,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-22,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-23,Deceased (based on date of death),Non-Fully Vaccinated,0.03
-2022-09-24,Deceased (based on date of death),Non-Fully Vaccinated,0.08
-2022-09-25,Deceased (based on date of death),Non-Fully Vaccinated,0.05
-2022-09-26,Deceased (based on date of death),Non-Fully Vaccinated,0.08
-2022-09-27,Deceased (based on date of death),Non-Fully Vaccinated,0.08
-2022-08-31,ICU,Fully Vaccinated (With Booster),0.11
-2022-09-01,ICU,Fully Vaccinated (With Booster),0.13
-2022-09-02,ICU,Fully Vaccinated (With Booster),0.14
-2022-09-03,ICU,Fully Vaccinated (With Booster),0.15
-2022-09-04,ICU,Fully Vaccinated (With Booster),0.16
-2022-09-05,ICU,Fully Vaccinated (With Booster),0.17
-2022-09-06,ICU,Fully Vaccinated (With Booster),0.17
+2022-09-28,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-09-29,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-09-30,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-10-01,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-10-02,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-10-03,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-10-04,Deceased (based on date of death),Fully Vaccinated (Without Booster),0.0
+2022-09-07,Deceased (based on date of death),Non-Fully Vaccinated,0.11
+2022-09-08,Deceased (based on date of death),Non-Fully Vaccinated,0.09
+2022-09-09,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-09-10,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-09-11,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-09-12,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-13,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-14,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-15,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-16,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-17,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-18,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-09-19,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-09-20,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-21,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-22,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-23,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-09-24,Deceased (based on date of death),Non-Fully Vaccinated,0.06
+2022-09-25,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-09-26,Deceased (based on date of death),Non-Fully Vaccinated,0.06
+2022-09-27,Deceased (based on date of death),Non-Fully Vaccinated,0.06
+2022-09-28,Deceased (based on date of death),Non-Fully Vaccinated,0.06
+2022-09-29,Deceased (based on date of death),Non-Fully Vaccinated,0.06
+2022-09-30,Deceased (based on date of death),Non-Fully Vaccinated,0.08
+2022-10-01,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-10-02,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-10-03,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-10-04,Deceased (based on date of death),Non-Fully Vaccinated,0.02
 2022-09-07,ICU,Fully Vaccinated (With Booster),0.17
 2022-09-08,ICU,Fully Vaccinated (With Booster),0.16
 2022-09-09,ICU,Fully Vaccinated (With Booster),0.15
-2022-09-10,ICU,Fully Vaccinated (With Booster),0.15
+2022-09-10,ICU,Fully Vaccinated (With Booster),0.14
 2022-09-11,ICU,Fully Vaccinated (With Booster),0.14
-2022-09-12,ICU,Fully Vaccinated (With Booster),0.14
-2022-09-13,ICU,Fully Vaccinated (With Booster),0.14
+2022-09-12,ICU,Fully Vaccinated (With Booster),0.13
+2022-09-13,ICU,Fully Vaccinated (With Booster),0.13
 2022-09-14,ICU,Fully Vaccinated (With Booster),0.13
-2022-09-15,ICU,Fully Vaccinated (With Booster),0.13
-2022-09-16,ICU,Fully Vaccinated (With Booster),0.13
-2022-09-17,ICU,Fully Vaccinated (With Booster),0.13
+2022-09-15,ICU,Fully Vaccinated (With Booster),0.12
+2022-09-16,ICU,Fully Vaccinated (With Booster),0.12
+2022-09-17,ICU,Fully Vaccinated (With Booster),0.12
 2022-09-18,ICU,Fully Vaccinated (With Booster),0.12
-2022-09-19,ICU,Fully Vaccinated (With Booster),0.12
-2022-09-20,ICU,Fully Vaccinated (With Booster),0.12
+2022-09-19,ICU,Fully Vaccinated (With Booster),0.11
+2022-09-20,ICU,Fully Vaccinated (With Booster),0.11
 2022-09-21,ICU,Fully Vaccinated (With Booster),0.12
 2022-09-22,ICU,Fully Vaccinated (With Booster),0.12
-2022-09-23,ICU,Fully Vaccinated (With Booster),0.12
+2022-09-23,ICU,Fully Vaccinated (With Booster),0.11
 2022-09-24,ICU,Fully Vaccinated (With Booster),0.11
-2022-09-25,ICU,Fully Vaccinated (With Booster),0.12
-2022-09-26,ICU,Fully Vaccinated (With Booster),0.12
+2022-09-25,ICU,Fully Vaccinated (With Booster),0.11
+2022-09-26,ICU,Fully Vaccinated (With Booster),0.11
 2022-09-27,ICU,Fully Vaccinated (With Booster),0.11
-2022-08-31,ICU,Fully Vaccinated (Without Booster),0.0
-2022-09-01,ICU,Fully Vaccinated (Without Booster),0.0
-2022-09-02,ICU,Fully Vaccinated (Without Booster),0.0
-2022-09-03,ICU,Fully Vaccinated (Without Booster),0.0
-2022-09-04,ICU,Fully Vaccinated (Without Booster),0.0
-2022-09-05,ICU,Fully Vaccinated (Without Booster),0.0
-2022-09-06,ICU,Fully Vaccinated (Without Booster),0.02
-2022-09-07,ICU,Fully Vaccinated (Without Booster),0.04
-2022-09-08,ICU,Fully Vaccinated (Without Booster),0.07
-2022-09-09,ICU,Fully Vaccinated (Without Booster),0.09
-2022-09-10,ICU,Fully Vaccinated (Without Booster),0.11
-2022-09-11,ICU,Fully Vaccinated (Without Booster),0.13
-2022-09-12,ICU,Fully Vaccinated (Without Booster),0.16
-2022-09-13,ICU,Fully Vaccinated (Without Booster),0.16
-2022-09-14,ICU,Fully Vaccinated (Without Booster),0.16
-2022-09-15,ICU,Fully Vaccinated (Without Booster),0.16
-2022-09-16,ICU,Fully Vaccinated (Without Booster),0.16
-2022-09-17,ICU,Fully Vaccinated (Without Booster),0.16
-2022-09-18,ICU,Fully Vaccinated (Without Booster),0.16
-2022-09-19,ICU,Fully Vaccinated (Without Booster),0.19
-2022-09-20,ICU,Fully Vaccinated (Without Booster),0.21
-2022-09-21,ICU,Fully Vaccinated (Without Booster),0.21
-2022-09-22,ICU,Fully Vaccinated (Without Booster),0.21
-2022-09-23,ICU,Fully Vaccinated (Without Booster),0.21
-2022-09-24,ICU,Fully Vaccinated (Without Booster),0.21
-2022-09-25,ICU,Fully Vaccinated (Without Booster),0.21
-2022-09-26,ICU,Fully Vaccinated (Without Booster),0.19
-2022-09-27,ICU,Fully Vaccinated (Without Booster),0.14
-2022-08-31,ICU,Non-Fully Vaccinated,0.56
-2022-09-01,ICU,Non-Fully Vaccinated,0.56
-2022-09-02,ICU,Non-Fully Vaccinated,0.59
-2022-09-03,ICU,Non-Fully Vaccinated,0.59
-2022-09-04,ICU,Non-Fully Vaccinated,0.56
-2022-09-05,ICU,Non-Fully Vaccinated,0.59
-2022-09-06,ICU,Non-Fully Vaccinated,0.56
-2022-09-07,ICU,Non-Fully Vaccinated,0.56
-2022-09-08,ICU,Non-Fully Vaccinated,0.59
-2022-09-09,ICU,Non-Fully Vaccinated,0.58
-2022-09-10,ICU,Non-Fully Vaccinated,0.56
-2022-09-11,ICU,Non-Fully Vaccinated,0.58
-2022-09-12,ICU,Non-Fully Vaccinated,0.58
-2022-09-13,ICU,Non-Fully Vaccinated,0.61
-2022-09-14,ICU,Non-Fully Vaccinated,0.58
-2022-09-15,ICU,Non-Fully Vaccinated,0.55
-2022-09-16,ICU,Non-Fully Vaccinated,0.53
-2022-09-17,ICU,Non-Fully Vaccinated,0.53
-2022-09-18,ICU,Non-Fully Vaccinated,0.47
-2022-09-19,ICU,Non-Fully Vaccinated,0.47
-2022-09-20,ICU,Non-Fully Vaccinated,0.44
-2022-09-21,ICU,Non-Fully Vaccinated,0.44
-2022-09-22,ICU,Non-Fully Vaccinated,0.44
-2022-09-23,ICU,Non-Fully Vaccinated,0.47
-2022-09-24,ICU,Non-Fully Vaccinated,0.47
-2022-09-25,ICU,Non-Fully Vaccinated,0.52
-2022-09-26,ICU,Non-Fully Vaccinated,0.52
-2022-09-27,ICU,Non-Fully Vaccinated,0.49
+2022-09-28,ICU,Fully Vaccinated (With Booster),0.1
+2022-09-29,ICU,Fully Vaccinated (With Booster),0.11
+2022-09-30,ICU,Fully Vaccinated (With Booster),0.12
+2022-10-01,ICU,Fully Vaccinated (With Booster),0.12
+2022-10-02,ICU,Fully Vaccinated (With Booster),0.13
+2022-10-03,ICU,Fully Vaccinated (With Booster),0.13
+2022-10-04,ICU,Fully Vaccinated (With Booster),0.15
+2022-09-07,ICU,Fully Vaccinated (Without Booster),0.05
+2022-09-08,ICU,Fully Vaccinated (Without Booster),0.08
+2022-09-09,ICU,Fully Vaccinated (Without Booster),0.1
+2022-09-10,ICU,Fully Vaccinated (Without Booster),0.13
+2022-09-11,ICU,Fully Vaccinated (Without Booster),0.16
+2022-09-12,ICU,Fully Vaccinated (Without Booster),0.18
+2022-09-13,ICU,Fully Vaccinated (Without Booster),0.18
+2022-09-14,ICU,Fully Vaccinated (Without Booster),0.18
+2022-09-15,ICU,Fully Vaccinated (Without Booster),0.19
+2022-09-16,ICU,Fully Vaccinated (Without Booster),0.19
+2022-09-17,ICU,Fully Vaccinated (Without Booster),0.19
+2022-09-18,ICU,Fully Vaccinated (Without Booster),0.19
+2022-09-19,ICU,Fully Vaccinated (Without Booster),0.22
+2022-09-20,ICU,Fully Vaccinated (Without Booster),0.24
+2022-09-21,ICU,Fully Vaccinated (Without Booster),0.25
+2022-09-22,ICU,Fully Vaccinated (Without Booster),0.25
+2022-09-23,ICU,Fully Vaccinated (Without Booster),0.25
+2022-09-24,ICU,Fully Vaccinated (Without Booster),0.25
+2022-09-25,ICU,Fully Vaccinated (Without Booster),0.25
+2022-09-26,ICU,Fully Vaccinated (Without Booster),0.22
+2022-09-27,ICU,Fully Vaccinated (Without Booster),0.17
+2022-09-28,ICU,Fully Vaccinated (Without Booster),0.14
+2022-09-29,ICU,Fully Vaccinated (Without Booster),0.14
+2022-09-30,ICU,Fully Vaccinated (Without Booster),0.17
+2022-10-01,ICU,Fully Vaccinated (Without Booster),0.17
+2022-10-02,ICU,Fully Vaccinated (Without Booster),0.17
+2022-10-03,ICU,Fully Vaccinated (Without Booster),0.17
+2022-10-04,ICU,Fully Vaccinated (Without Booster),0.2
+2022-09-07,ICU,Non-Fully Vaccinated,0.43
+2022-09-08,ICU,Non-Fully Vaccinated,0.46
+2022-09-09,ICU,Non-Fully Vaccinated,0.46
+2022-09-10,ICU,Non-Fully Vaccinated,0.43
+2022-09-11,ICU,Non-Fully Vaccinated,0.45
+2022-09-12,ICU,Non-Fully Vaccinated,0.45
+2022-09-13,ICU,Non-Fully Vaccinated,0.47
+2022-09-14,ICU,Non-Fully Vaccinated,0.45
+2022-09-15,ICU,Non-Fully Vaccinated,0.43
+2022-09-16,ICU,Non-Fully Vaccinated,0.41
+2022-09-17,ICU,Non-Fully Vaccinated,0.41
+2022-09-18,ICU,Non-Fully Vaccinated,0.36
+2022-09-19,ICU,Non-Fully Vaccinated,0.36
+2022-09-20,ICU,Non-Fully Vaccinated,0.34
+2022-09-21,ICU,Non-Fully Vaccinated,0.34
+2022-09-22,ICU,Non-Fully Vaccinated,0.34
+2022-09-23,ICU,Non-Fully Vaccinated,0.36
+2022-09-24,ICU,Non-Fully Vaccinated,0.36
+2022-09-25,ICU,Non-Fully Vaccinated,0.4
+2022-09-26,ICU,Non-Fully Vaccinated,0.4
+2022-09-27,ICU,Non-Fully Vaccinated,0.38
+2022-09-28,ICU,Non-Fully Vaccinated,0.36
+2022-09-29,ICU,Non-Fully Vaccinated,0.34
+2022-09-30,ICU,Non-Fully Vaccinated,0.29
+2022-10-01,ICU,Non-Fully Vaccinated,0.25
+2022-10-02,ICU,Non-Fully Vaccinated,0.21
+2022-10-03,ICU,Non-Fully Vaccinated,0.17
+2022-10-04,ICU,Non-Fully Vaccinated,0.15
