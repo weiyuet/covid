@@ -14,7 +14,7 @@ epidemic_curve %>%
   scale_x_date(expand = c(0.01, 0),
                labels = label_date_short(),
                date_breaks = "3 months") +
-  scale_y_continuous(expand = c(0, 0),
+  scale_y_continuous(expand = c(0.01, 0),
                      labels = label_number(big.mark = ","),
                      limits = c(0, 30000),
                      breaks = seq(0, 30000, 5000)) +
