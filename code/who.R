@@ -26,7 +26,7 @@ p1 <- vaccination_data %>%
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
                      breaks = seq(0, 120, 20)) +
-  scale_fill_npg() +
+  scale_fill_tron() +
   theme_classic() +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
@@ -51,7 +51,7 @@ p2 <- vaccination_data %>%
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
                      breaks = seq(0, 25, 5)) +
-  scale_fill_npg() +
+  scale_fill_tron() +
   theme_classic() +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
