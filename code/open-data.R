@@ -40,7 +40,7 @@ sg_data %>%
   guides(guide_legend(nrow = 1)) +
   labs(x = "", y = "(log scale)",
        colour = "",
-       title = glue("COVID-19 in Singapore - Cumulative Cases as of {max(sg_data$date)}"),
+       title = glue("COVID-19 in Singapore - Cumulative Cases (updated {max(sg_data$date)})"),
        subtitle = "The first wave had the most number of exponential cases",
        caption = "Data: Google COVID-19 Open Data | Graphic: @weiyuet")
 

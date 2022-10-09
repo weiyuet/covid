@@ -23,7 +23,7 @@ epidemic_curve %>%
   theme(legend.position = c(0.2, 0.5)) +
   labs(x = "", y = "",
        colour = "",
-       title = "COVID-19 Epidemic Curve",
+       title = glue("COVID-19 Epidemic Curve (updated {max(epidemic_curve$date)})"),
        subtitle = "There were three major waves of infection in Singapore",
        caption = "Data: data.gov.sg | Graphic: @weiyuet")
 

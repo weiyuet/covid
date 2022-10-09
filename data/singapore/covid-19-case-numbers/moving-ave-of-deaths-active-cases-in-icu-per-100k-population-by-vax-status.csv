@@ -1,14 +1,9 @@
 as_of_date,clinicalstatus,vaccination_status,count_of_case
-2022-09-07,Deceased (based on date of death),Fully Vaccinated,0.01
-2022-09-08,Deceased (based on date of death),Fully Vaccinated,0.01
-2022-09-09,Deceased (based on date of death),Fully Vaccinated,0.01
-2022-09-10,Deceased (based on date of death),Fully Vaccinated,0.01
-2022-09-11,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-09-12,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-09-13,Deceased (based on date of death),Fully Vaccinated,0.0
-2022-09-14,Deceased (based on date of death),Fully Vaccinated,0.0
-2022-09-15,Deceased (based on date of death),Fully Vaccinated,0.0
-2022-09-16,Deceased (based on date of death),Fully Vaccinated,0.0
+2022-09-14,Deceased (based on date of death),Fully Vaccinated,0.01
+2022-09-15,Deceased (based on date of death),Fully Vaccinated,0.01
+2022-09-16,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-09-17,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-09-18,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-09-19,Deceased (based on date of death),Fully Vaccinated,0.01
@@ -26,12 +21,12 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-10-01,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-10-02,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-10-03,Deceased (based on date of death),Fully Vaccinated,0.01
-2022-10-04,Deceased (based on date of death),Fully Vaccinated,0.01
-2022-09-07,Deceased (based on date of death),Non-Fully Vaccinated,0.11
-2022-09-08,Deceased (based on date of death),Non-Fully Vaccinated,0.09
-2022-09-09,Deceased (based on date of death),Non-Fully Vaccinated,0.04
-2022-09-10,Deceased (based on date of death),Non-Fully Vaccinated,0.04
-2022-09-11,Deceased (based on date of death),Non-Fully Vaccinated,0.04
+2022-10-04,Deceased (based on date of death),Fully Vaccinated,0.02
+2022-10-05,Deceased (based on date of death),Fully Vaccinated,0.02
+2022-10-06,Deceased (based on date of death),Fully Vaccinated,0.02
+2022-10-07,Deceased (based on date of death),Fully Vaccinated,0.01
+2022-10-08,Deceased (based on date of death),Fully Vaccinated,0.01
+2022-10-09,Deceased (based on date of death),Fully Vaccinated,0.01
 2022-09-12,Deceased (based on date of death),Non-Fully Vaccinated,0.02
 2022-09-13,Deceased (based on date of death),Non-Fully Vaccinated,0.02
 2022-09-14,Deceased (based on date of death),Non-Fully Vaccinated,0.02
@@ -55,11 +50,11 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-10-02,Deceased (based on date of death),Non-Fully Vaccinated,0.04
 2022-10-03,Deceased (based on date of death),Non-Fully Vaccinated,0.02
 2022-10-04,Deceased (based on date of death),Non-Fully Vaccinated,0.02
-2022-09-07,ICU,Fully Vaccinated,0.15
-2022-09-08,ICU,Fully Vaccinated,0.15
-2022-09-09,ICU,Fully Vaccinated,0.14
-2022-09-10,ICU,Fully Vaccinated,0.14
-2022-09-11,ICU,Fully Vaccinated,0.14
+2022-10-05,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-10-06,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-10-07,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-10-08,Deceased (based on date of death),Non-Fully Vaccinated,0.02
+2022-10-09,Deceased (based on date of death),Non-Fully Vaccinated,0.02
 2022-09-12,ICU,Fully Vaccinated,0.14
 2022-09-13,ICU,Fully Vaccinated,0.14
 2022-09-14,ICU,Fully Vaccinated,0.14
@@ -83,11 +78,11 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-10-02,ICU,Fully Vaccinated,0.13
 2022-10-03,ICU,Fully Vaccinated,0.14
 2022-10-04,ICU,Fully Vaccinated,0.15
-2022-09-07,ICU,Non-Fully Vaccinated,0.43
-2022-09-08,ICU,Non-Fully Vaccinated,0.46
-2022-09-09,ICU,Non-Fully Vaccinated,0.46
-2022-09-10,ICU,Non-Fully Vaccinated,0.43
-2022-09-11,ICU,Non-Fully Vaccinated,0.45
+2022-10-05,ICU,Fully Vaccinated,0.17
+2022-10-06,ICU,Fully Vaccinated,0.17
+2022-10-07,ICU,Fully Vaccinated,0.18
+2022-10-08,ICU,Fully Vaccinated,0.18
+2022-10-09,ICU,Fully Vaccinated,0.18
 2022-09-12,ICU,Non-Fully Vaccinated,0.45
 2022-09-13,ICU,Non-Fully Vaccinated,0.47
 2022-09-14,ICU,Non-Fully Vaccinated,0.45
@@ -111,3 +106,8 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-10-02,ICU,Non-Fully Vaccinated,0.21
 2022-10-03,ICU,Non-Fully Vaccinated,0.17
 2022-10-04,ICU,Non-Fully Vaccinated,0.15
+2022-10-05,ICU,Non-Fully Vaccinated,0.15
+2022-10-06,ICU,Non-Fully Vaccinated,0.17
+2022-10-07,ICU,Non-Fully Vaccinated,0.21
+2022-10-08,ICU,Non-Fully Vaccinated,0.23
+2022-10-09,ICU,Non-Fully Vaccinated,0.25
