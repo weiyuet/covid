@@ -9,7 +9,7 @@ open_data <- read_csv("https://storage.googleapis.com/covid19-open-data/v3/epide
 
 # Data to tidy format
 tidy_data <- open_data %>%
-  pivot_longer(cols = new_confirmed:cumulative_tested, names_to = "infection_type", values_to = "values")
+  pivot_longer(cols = new_confirmed:cumulative_tested, names_to = "infection_type", values_to = "count")
 
 # Covid in SG
 sg_data <- tidy_data %>% 
@@ -17,7 +17,7 @@ sg_data <- tidy_data %>%
   filter(infection_type %in% c("cumulative_confirmed", "cumulative_deceased"))
 
 sg_data %>% 
-  ggplot(aes(x = date, y = values, colour = infection_type)) +
+  ggplot(aes(x = date, y = count, colour = infection_type)) +
   geom_step() +
   scale_x_date(
     expand = c(0.01, 0),
@@ -31,8 +31,8 @@ sg_data %>%
   annotate(
     geom = "text",
     x = as.Date(glue("{max(sg_data$date) - 35}")),
-    y = max(sg_data$values) + 950000,
-    label = glue("{max(sg_data$values)}"),
+    y = max(sg_data$count) + 950000,
+    label = glue("{max(sg_data$count)}"),
     size = 3.5
   ) +
   theme_classic() +
