@@ -98,7 +98,7 @@ case_counts %>%
   theme(legend.position = c(0.8, 0.3)) +
   labs(x = "", y = "",
        fill = "",
-       title = "Highest Newly Reported Cases in the Last 7 Days",
+       title = "Highest Reported Cases in the Last 7 Days",
        subtitle = "per 100,000 population",
        caption = "Data: WHO | Graphic: @weiyuet")
 
