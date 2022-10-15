@@ -24,7 +24,7 @@ epidemic_curve %>%
   labs(x = "", y = "",
        colour = "",
        title = glue("COVID-19 Epidemic Curve (updated {max(epidemic_curve$date)})"),
-       subtitle = "There were three major waves of infection in Singapore",
+       subtitle = "There were three major waves of infection in Singapore - but looks like another major wave developing",
        caption = "Data: data.gov.sg | Graphic: @weiyuet")
 
-ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 4.5)
+ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 5)
