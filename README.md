@@ -17,7 +17,7 @@ Updated: 2022-10-15
 ## Total Cumulative Cases in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-cumulative-sg.png)
 
-## Highest New Cases in the Last 7 Days
+## Highest Reported Cases in the Last 7 Days
 ![](https://github.com/weiyuet/covid/blob/main/figures/new-cases-last-seven-days.png)
 
 ## Vaccination Rates
