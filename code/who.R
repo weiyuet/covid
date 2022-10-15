@@ -92,6 +92,12 @@ case_counts %>%
   slice_max(order_by = count, n = 20) %>% 
   ggplot(aes(x = count, y = name, fill = who_region)) +
   geom_col(colour = "gray10") +
+  geom_label(aes(x = count, y = name, label = round(count, 0)),
+             hjust = 1, 
+             vjust = 0.5,
+             fill = NA,
+             label.size = NA,
+             size = 3) +
   scale_x_continuous(expand = c(0.01, 0)) +
   scale_fill_tron() +
   theme_classic() +
