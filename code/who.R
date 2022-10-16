@@ -70,8 +70,9 @@ p + plot_annotation(title = "Persons Fully Vaccinated per 100 Population",
                     caption = "Data: WHO | Graphic: @weiyuet")
 
 # Save image
-ggsave("figures/country-vaccination-rates.png", width = 8, height = 8)
+ggsave("figures/country-vaccination-rates.png", width = 7, height = 7)
 
+# Load data case counts
 case_counts <- read_csv("data/who/WHO-COVID-19-global-table-data.csv")
 
 # Wrangle
@@ -83,7 +84,7 @@ case_counts <- case_counts %>%
 case_counts <- case_counts %>% 
   pivot_longer(cols = cases_cumulative_total:deaths_newly_reported_in_last_24_hours, names_to = "case_type", values_to = "count")
 
-# Which countries have highest newly reported cases in the last 7 days?
+# Which countries have highest reported cases in the last 7 days?
 case_counts %>% 
   filter(case_type == "cases_newly_reported_in_last_7_days_per_100000_population") %>% 
   mutate(name = case_when(name == "Micronesia (Federated States of)" ~ "Micronesia",
@@ -109,4 +110,4 @@ case_counts %>%
        caption = "Data: WHO | Graphic: @weiyuet")
 
 # Save image
-ggsave("figures/new-cases-last-seven-days.png", width = 8, height = 8)
+ggsave("figures/new-cases-last-seven-days.png", width = 7, height = 7)
