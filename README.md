@@ -7,7 +7,7 @@ Data:
   
   - [`Government of Singapore`](https://data.gov.sg/dataset/covid-19-statistics)
   
-  - [`Google Covid-19 Open Data`](https://health.google.com/covid-19/open-data)
+  - [`COVID-19 Open Data - Google Health`](https://health.google.com/covid-19/open-data)
   
 Updated: 2022-10-15
   
