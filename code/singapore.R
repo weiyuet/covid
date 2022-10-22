@@ -20,11 +20,11 @@ epidemic_curve %>%
                      breaks = seq(0, 30000, 5000)) +
   scale_colour_jco() +
   theme_classic() +
-  theme(legend.position = c(0.2, 0.5)) +
+  theme(legend.position = c(0.25, 0.5)) +
   labs(x = "", y = "",
        colour = "",
        title = glue("COVID-19 Epidemic Curve (updated {max(epidemic_curve$date)})"),
-       subtitle = "There were three major waves of infection in Singapore - but looks like another major wave developing",
+       subtitle = "Singapore is currently in a fourth major wave",
        caption = "Data: data.gov.sg | Graphic: @weiyuet")
 
 ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 5)
