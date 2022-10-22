@@ -4,6 +4,7 @@ library(janitor)
 library(scales)
 library(paletteer)
 library(patchwork)
+library(glue)
 
 # Load data vaccination
 vaccination_data <- read_csv("data/who/vaccination-data.csv")
@@ -137,7 +138,7 @@ cases %>%
   theme_classic() +
   labs(x = "", y = "",
        colour = "WHO Region",
-       title = "New COVID-19 Cases Reported",
+       title = glue("New COVID-19 Cases Reported (updated {max(cases$date_reported)})"),
        caption = "Data: WHO | Graphic: @weiyuet")
 
 # Save image
