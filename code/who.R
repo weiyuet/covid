@@ -114,3 +114,31 @@ case_counts %>%
 
 # Save image
 ggsave("figures/new-cases-last-seven-days.png", width = 7, height = 7)
+
+# Load data case time series
+cases <- read_csv("data/who/WHO-COVID-19-global-data.csv")
+
+# Wrangle
+# Column names to lower case
+cases <- cases %>% 
+  clean_names()
+
+# Visualize
+cases %>%
+  select(date_reported, who_region, new_cases) %>%
+  filter(new_cases > 0) %>% 
+  ggplot(aes(x = date_reported, y = new_cases, colour = who_region)) +
+  geom_line(alpha = 0.9) +
+  scale_x_date(labels = label_date_short(),
+               date_breaks = "3 months") +
+  scale_y_continuous(labels = label_number(big.mark = ","),
+                     expand = c(0.01, 0)) +
+  scale_colour_paletteer_d("feathers::rose_crowned_fruit_dove") +
+  theme_classic() +
+  labs(x = "", y = "",
+       colour = "WHO Region",
+       title = "New COVID-19 Cases Reported",
+       caption = "Data: WHO | Graphic: @weiyuet")
+
+# Save image
+ggsave("figures/new-cases.png", width = 7, height = 5)
