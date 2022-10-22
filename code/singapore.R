@@ -2,7 +2,7 @@
 library(tidyverse)
 library(scales)
 library(glue)
-library(ggsci)
+library(paletteer)
 
 # Load data
 epidemic_curve <- read_csv("data/singapore/covid-19-case-numbers/epidemic-curve.csv")
@@ -18,7 +18,8 @@ epidemic_curve %>%
                      labels = label_number(big.mark = ","),
                      limits = c(0, 30000),
                      breaks = seq(0, 30000, 5000)) +
-  scale_colour_jco() +
+  scale_colour_paletteer_d("dutchmasters::milkmaid",
+                           guide = guide_legend(reverse = TRUE)) +
   theme_classic() +
   theme(legend.position = c(0.25, 0.5)) +
   labs(x = "", y = "",

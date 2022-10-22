@@ -14,9 +14,6 @@ Updated: 2022-10-22
 ## Epidemic Curve in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-epidemic-curve-sg.png)
 
-## Total Cumulative Cases in Singapore
-![](https://github.com/weiyuet/covid/blob/main/figures/covid-cumulative-sg.png)
-
 ## Highest Reported Cases in the Last 7 Days
 ![](https://github.com/weiyuet/covid/blob/main/figures/new-cases-last-seven-days.png)
 

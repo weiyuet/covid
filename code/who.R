@@ -2,7 +2,7 @@
 library(tidyverse)
 library(janitor)
 library(scales)
-library(ggsci)
+library(paletteer)
 library(patchwork)
 
 # Load data vaccination
@@ -29,7 +29,8 @@ p1 <- vaccination_data %>%
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
                      breaks = seq(0, 120, 20)) +
-  scale_fill_tron() +
+  scale_fill_paletteer_d("feathers::rose_crowned_fruit_dove",
+                         direction = -1) +
   theme_classic() +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
@@ -54,7 +55,8 @@ p2 <- vaccination_data %>%
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
                      breaks = seq(0, 25, 5)) +
-  scale_fill_tron() +
+  scale_fill_paletteer_d("feathers::rose_crowned_fruit_dove", 
+                         direction = -1) +
   theme_classic() +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
@@ -100,7 +102,8 @@ case_counts %>%
              label.size = NA,
              size = 3) +
   scale_x_continuous(expand = c(0.01, 0)) +
-  scale_fill_tron() +
+  scale_fill_paletteer_d("feathers::rose_crowned_fruit_dove",
+                         direction = -1) +
   theme_classic() +
   theme(legend.position = c(0.8, 0.3)) +
   labs(x = "", y = "",
