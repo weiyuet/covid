@@ -103,8 +103,7 @@ case_counts %>%
              label.size = NA,
              size = 3) +
   scale_x_continuous(expand = c(0.01, 0)) +
-  scale_fill_paletteer_d("feathers::rose_crowned_fruit_dove",
-                         direction = -1) +
+  scale_fill_paletteer_d("ggsci::legacy_tron") +
   theme_classic() +
   theme(legend.position = c(0.8, 0.3)) +
   labs(x = "", y = "",
@@ -124,7 +123,7 @@ cases <- read_csv("data/who/WHO-COVID-19-global-data.csv")
 cases <- cases %>% 
   clean_names()
 
-# Visualize
+# Which regions are reporting the most number of new cases?
 cases %>%
   select(date_reported, who_region, new_cases) %>%
   filter(new_cases > 0) %>% 
