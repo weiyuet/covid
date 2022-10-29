@@ -2,7 +2,7 @@
 library(tidyverse)
 library(scales)
 library(glue)
-library(ggsci)
+library(paletteer)
 
 # Load data
 open_data <- read_csv("https://storage.googleapis.com/covid19-open-data/v3/epidemiology.csv")

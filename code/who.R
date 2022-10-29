@@ -128,7 +128,7 @@ cases %>%
   select(date_reported, who_region, new_cases) %>%
   filter(new_cases > 0) %>% 
   ggplot(aes(x = date_reported, y = new_cases, colour = who_region)) +
-  geom_step(alpha = 0.9) +
+  geom_line() +
   scale_x_date(labels = label_date_short(),
                date_breaks = "3 months") +
   scale_y_continuous(labels = label_number(big.mark = ","),
