@@ -18,7 +18,7 @@ epidemic_curve %>%
                      labels = label_number(big.mark = ","),
                      limits = c(0, 30000),
                      breaks = seq(0, 30000, 5000)) +
-  scale_colour_paletteer_d("dutchmasters::milkmaid",
+  scale_colour_paletteer_d("ggsci::springfield_simpsons",
                            guide = guide_legend(reverse = TRUE)) +
   theme_classic() +
   theme(legend.position = c(0.25, 0.5)) +
