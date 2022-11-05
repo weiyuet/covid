@@ -29,3 +29,11 @@ epidemic_curve %>%
        caption = "Data: data.gov.sg | Graphic: @weiyuet")
 
 ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 5)
+
+# Load data
+week_on_week_infection_ratio <- read_csv("data/singapore/covid-19-case-numbers/week-on-week-infection-ratio.csv")
+
+# Visualize
+week_on_week_infection_ratio %>% 
+  ggplot(aes(x = pr_date, y = ratio_comm_cases_pw_over_wb)) +
+  geom_step()
