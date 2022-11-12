@@ -9,10 +9,13 @@ Data:
   
   - [`COVID-19 Open Data - Google Health`](https://health.google.com/covid-19/open-data)
   
-Updated: 2022-11-04
+Updated: 2022-11-12
   
 ## Epidemic Curve in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-epidemic-curve-sg.png)
+
+## Week-on-week Infection Ratio in Singapore
+![](https://github.com/weiyuet/covid/blob/main/figures/week-on-week-infection-ratio.png)
 
 ## New Cases Reported
 ![](https://github.com/weiyuet/covid/blob/main/figures/new-cases.png)
