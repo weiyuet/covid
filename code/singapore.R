@@ -1,13 +1,21 @@
+###########################
+# COVID Data from SG Govt #
+###########################
+
 # Setup
 library(tidyverse)
 library(scales)
 library(glue)
 library(paletteer)
 
-# Load data
+##################
+# Epidemic Curve #
+##################
+
+#### Load data ####
 epidemic_curve <- read_csv("data/singapore/covid-19-case-numbers/epidemic-curve.csv")
 
-# Visualize
+#### Epidemic Curve Plot ####
 epidemic_curve %>% 
   ggplot(aes(x = date, y = value, colour = type)) +
   geom_step() +
@@ -25,15 +33,31 @@ epidemic_curve %>%
   labs(x = "", y = "",
        colour = "",
        title = glue("COVID-19 Epidemic Curve (updated {max(epidemic_curve$date)})"),
-       subtitle = "Singapore is currently in a fourth major wave",
        caption = "Data: data.gov.sg | Graphic: @weiyuet")
 
+#### Save image ####
 ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 5)
 
-# Load data
+#########################
+# W-O-W Infection Ratio #
+#########################
+
+#### Load data ####
 week_on_week_infection_ratio <- read_csv("data/singapore/covid-19-case-numbers/week-on-week-infection-ratio.csv")
 
-# Visualize
+#### Week-on-week Infection Ratio ####
 week_on_week_infection_ratio %>% 
   ggplot(aes(x = pr_date, y = ratio_comm_cases_pw_over_wb)) +
-  geom_step()
+  geom_step() +
+  geom_hline(yintercept = 1,
+             colour = "red",
+             linetype = "dashed") +
+  scale_x_date(labels = label_date_short(),
+               date_breaks = "1 week") +
+  theme_classic() +
+  labs(x = "", y = "",
+       title = glue("Week-on-week Infection Ratio in Singapore (updated {max(week_on_week_infection_ratio$pr_date)})"),
+       caption = "Data: data.gov.sg | Graphic: @weiyuet")
+
+#### Save image ####
+ggsave("figures/week-on-week-infection-ratio.png", width = 7, height = 5)
