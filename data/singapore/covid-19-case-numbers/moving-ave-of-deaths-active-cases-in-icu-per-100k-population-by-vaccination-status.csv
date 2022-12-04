@@ -1,11 +1,4 @@
 as_of_date,clinicalstatus,vaccination_status,count_of_case
-2022-10-30,Deceased (based on date of death),Up-to-Date Vaccination,0.04
-2022-10-31,Deceased (based on date of death),Up-to-Date Vaccination,0.04
-2022-11-01,Deceased (based on date of death),Up-to-Date Vaccination,0.04
-2022-11-02,Deceased (based on date of death),Up-to-Date Vaccination,0.03
-2022-11-03,Deceased (based on date of death),Up-to-Date Vaccination,0.03
-2022-11-04,Deceased (based on date of death),Up-to-Date Vaccination,0.03
-2022-11-05,Deceased (based on date of death),Up-to-Date Vaccination,0.02
 2022-11-06,Deceased (based on date of death),Up-to-Date Vaccination,0.01
 2022-11-07,Deceased (based on date of death),Up-to-Date Vaccination,0.01
 2022-11-08,Deceased (based on date of death),Up-to-Date Vaccination,0.01
@@ -27,22 +20,22 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-11-24,Deceased (based on date of death),Up-to-Date Vaccination,0.01
 2022-11-25,Deceased (based on date of death),Up-to-Date Vaccination,0.01
 2022-11-26,Deceased (based on date of death),Up-to-Date Vaccination,0.01
-2022-10-30,Deceased (based on date of death),No Minimum Protection,0.06
-2022-10-31,Deceased (based on date of death),No Minimum Protection,0.04
-2022-11-01,Deceased (based on date of death),No Minimum Protection,0.05
-2022-11-02,Deceased (based on date of death),No Minimum Protection,0.04
-2022-11-03,Deceased (based on date of death),No Minimum Protection,0.02
-2022-11-04,Deceased (based on date of death),No Minimum Protection,0.05
-2022-11-05,Deceased (based on date of death),No Minimum Protection,0.05
+2022-11-27,Deceased (based on date of death),Up-to-Date Vaccination,0.01
+2022-11-28,Deceased (based on date of death),Up-to-Date Vaccination,0.01
+2022-11-29,Deceased (based on date of death),Up-to-Date Vaccination,0.01
+2022-11-30,Deceased (based on date of death),Up-to-Date Vaccination,0.01
+2022-12-01,Deceased (based on date of death),Up-to-Date Vaccination,0.01
+2022-12-02,Deceased (based on date of death),Up-to-Date Vaccination,0.0
+2022-12-03,Deceased (based on date of death),Up-to-Date Vaccination,0.0
 2022-11-06,Deceased (based on date of death),No Minimum Protection,0.05
 2022-11-07,Deceased (based on date of death),No Minimum Protection,0.05
-2022-11-08,Deceased (based on date of death),No Minimum Protection,0.05
-2022-11-09,Deceased (based on date of death),No Minimum Protection,0.04
-2022-11-10,Deceased (based on date of death),No Minimum Protection,0.04
-2022-11-11,Deceased (based on date of death),No Minimum Protection,0.01
-2022-11-12,Deceased (based on date of death),No Minimum Protection,0.03
-2022-11-13,Deceased (based on date of death),No Minimum Protection,0.03
-2022-11-14,Deceased (based on date of death),No Minimum Protection,0.04
+2022-11-08,Deceased (based on date of death),No Minimum Protection,0.06
+2022-11-09,Deceased (based on date of death),No Minimum Protection,0.05
+2022-11-10,Deceased (based on date of death),No Minimum Protection,0.05
+2022-11-11,Deceased (based on date of death),No Minimum Protection,0.03
+2022-11-12,Deceased (based on date of death),No Minimum Protection,0.04
+2022-11-13,Deceased (based on date of death),No Minimum Protection,0.04
+2022-11-14,Deceased (based on date of death),No Minimum Protection,0.05
 2022-11-15,Deceased (based on date of death),No Minimum Protection,0.03
 2022-11-16,Deceased (based on date of death),No Minimum Protection,0.04
 2022-11-17,Deceased (based on date of death),No Minimum Protection,0.04
@@ -55,13 +48,13 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-11-24,Deceased (based on date of death),No Minimum Protection,0.0
 2022-11-25,Deceased (based on date of death),No Minimum Protection,0.0
 2022-11-26,Deceased (based on date of death),No Minimum Protection,0.0
-2022-10-30,Deceased (based on date of death),Minimum Protection,0.04
-2022-10-31,Deceased (based on date of death),Minimum Protection,0.04
-2022-11-01,Deceased (based on date of death),Minimum Protection,0.04
-2022-11-02,Deceased (based on date of death),Minimum Protection,0.04
-2022-11-03,Deceased (based on date of death),Minimum Protection,0.03
-2022-11-04,Deceased (based on date of death),Minimum Protection,0.03
-2022-11-05,Deceased (based on date of death),Minimum Protection,0.02
+2022-11-27,Deceased (based on date of death),No Minimum Protection,0.0
+2022-11-28,Deceased (based on date of death),No Minimum Protection,0.0
+2022-11-29,Deceased (based on date of death),No Minimum Protection,0.0
+2022-11-30,Deceased (based on date of death),No Minimum Protection,0.0
+2022-12-01,Deceased (based on date of death),No Minimum Protection,0.0
+2022-12-02,Deceased (based on date of death),No Minimum Protection,0.0
+2022-12-03,Deceased (based on date of death),No Minimum Protection,0.0
 2022-11-06,Deceased (based on date of death),Minimum Protection,0.01
 2022-11-07,Deceased (based on date of death),Minimum Protection,0.01
 2022-11-08,Deceased (based on date of death),Minimum Protection,0.01
@@ -83,13 +76,13 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-11-24,Deceased (based on date of death),Minimum Protection,0.01
 2022-11-25,Deceased (based on date of death),Minimum Protection,0.01
 2022-11-26,Deceased (based on date of death),Minimum Protection,0.01
-2022-10-30,ICU,Up-to-Date Vaccination,0.25
-2022-10-31,ICU,Up-to-Date Vaccination,0.27
-2022-11-01,ICU,Up-to-Date Vaccination,0.29
-2022-11-02,ICU,Up-to-Date Vaccination,0.29
-2022-11-03,ICU,Up-to-Date Vaccination,0.28
-2022-11-04,ICU,Up-to-Date Vaccination,0.27
-2022-11-05,ICU,Up-to-Date Vaccination,0.28
+2022-11-27,Deceased (based on date of death),Minimum Protection,0.01
+2022-11-28,Deceased (based on date of death),Minimum Protection,0.01
+2022-11-29,Deceased (based on date of death),Minimum Protection,0.01
+2022-11-30,Deceased (based on date of death),Minimum Protection,0.01
+2022-12-01,Deceased (based on date of death),Minimum Protection,0.01
+2022-12-02,Deceased (based on date of death),Minimum Protection,0.01
+2022-12-03,Deceased (based on date of death),Minimum Protection,0.01
 2022-11-06,ICU,Up-to-Date Vaccination,0.27
 2022-11-07,ICU,Up-to-Date Vaccination,0.27
 2022-11-08,ICU,Up-to-Date Vaccination,0.25
@@ -111,13 +104,13 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-11-24,ICU,Up-to-Date Vaccination,0.15
 2022-11-25,ICU,Up-to-Date Vaccination,0.16
 2022-11-26,ICU,Up-to-Date Vaccination,0.18
-2022-10-30,ICU,No Minimum Protection,0.11
-2022-10-31,ICU,No Minimum Protection,0.12
-2022-11-01,ICU,No Minimum Protection,0.15
-2022-11-02,ICU,No Minimum Protection,0.17
-2022-11-03,ICU,No Minimum Protection,0.19
-2022-11-04,ICU,No Minimum Protection,0.21
-2022-11-05,ICU,No Minimum Protection,0.24
+2022-11-27,ICU,Up-to-Date Vaccination,0.2
+2022-11-28,ICU,Up-to-Date Vaccination,0.21
+2022-11-29,ICU,Up-to-Date Vaccination,0.23
+2022-11-30,ICU,Up-to-Date Vaccination,0.23
+2022-12-01,ICU,Up-to-Date Vaccination,0.23
+2022-12-02,ICU,Up-to-Date Vaccination,0.22
+2022-12-03,ICU,Up-to-Date Vaccination,0.21
 2022-11-06,ICU,No Minimum Protection,0.25
 2022-11-07,ICU,No Minimum Protection,0.26
 2022-11-08,ICU,No Minimum Protection,0.26
@@ -139,13 +132,13 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-11-24,ICU,No Minimum Protection,0.0
 2022-11-25,ICU,No Minimum Protection,0.0
 2022-11-26,ICU,No Minimum Protection,0.0
-2022-10-30,ICU,Minimum Protection,0.27
-2022-10-31,ICU,Minimum Protection,0.28
-2022-11-01,ICU,Minimum Protection,0.31
-2022-11-02,ICU,Minimum Protection,0.3
-2022-11-03,ICU,Minimum Protection,0.3
-2022-11-04,ICU,Minimum Protection,0.29
-2022-11-05,ICU,Minimum Protection,0.3
+2022-11-27,ICU,No Minimum Protection,0.0
+2022-11-28,ICU,No Minimum Protection,0.0
+2022-11-29,ICU,No Minimum Protection,0.0
+2022-11-30,ICU,No Minimum Protection,0.0
+2022-12-01,ICU,No Minimum Protection,0.0
+2022-12-02,ICU,No Minimum Protection,0.01
+2022-12-03,ICU,No Minimum Protection,0.03
 2022-11-06,ICU,Minimum Protection,0.3
 2022-11-07,ICU,Minimum Protection,0.3
 2022-11-08,ICU,Minimum Protection,0.28
@@ -167,3 +160,10 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2022-11-24,ICU,Minimum Protection,0.18
 2022-11-25,ICU,Minimum Protection,0.19
 2022-11-26,ICU,Minimum Protection,0.21
+2022-11-27,ICU,Minimum Protection,0.23
+2022-11-28,ICU,Minimum Protection,0.23
+2022-11-29,ICU,Minimum Protection,0.23
+2022-11-30,ICU,Minimum Protection,0.23
+2022-12-01,ICU,Minimum Protection,0.23
+2022-12-02,ICU,Minimum Protection,0.21
+2022-12-03,ICU,Minimum Protection,0.2
