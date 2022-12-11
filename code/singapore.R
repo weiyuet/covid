@@ -38,9 +38,9 @@ epidemic_curve %>%
 #### Save image ####
 ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 5)
 
-#########################
-# W-O-W Infection Ratio #
-#########################
+################################
+# Week-on-Week Infection Ratio #
+################################
 
 #### Load data ####
 week_on_week_infection_ratio <- read_csv("data/singapore/covid-19-case-numbers/week-on-week-infection-ratio.csv")
