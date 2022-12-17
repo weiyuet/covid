@@ -29,7 +29,7 @@ epidemic_curve %>%
   scale_colour_paletteer_d("ggsci::springfield_simpsons",
                            guide = guide_legend(reverse = TRUE)) +
   theme_classic() +
-  theme(legend.position = c(0.25, 0.5)) +
+  theme(legend.position = c(0.9, 0.9)) +
   labs(x = "", y = "",
        colour = "",
        title = glue("COVID-19 Epidemic Curve (updated {max(epidemic_curve$date)})"),

@@ -9,7 +9,7 @@ Data:
   
   - [`COVID-19 Open Data - Google Health`](https://health.google.com/covid-19/open-data)
   
-Updated: 2022-12-11
+Updated: 2022-12-17
   
 ## Epidemic Curve in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-epidemic-curve-sg.png)

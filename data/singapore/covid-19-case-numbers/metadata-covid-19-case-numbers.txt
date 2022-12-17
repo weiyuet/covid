@@ -18,16 +18,16 @@ Sources:
   - 'Ministry of Health'
 License: 'https://data.gov.sg/open-data-licence'
 Frequency: 'Ad-hoc'
-Coverage: '2020-01-23 to 2022-12-10'
-Last Updated: '2022-12-10T12:48:31.397637'
+Coverage: '2020-01-23 to 2022-12-16'
+Last Updated: '2022-12-16T12:54:32.384581'
 Resources:
   -
     Identifier: '9de30d8d-3c0d-48ab-8c1b-4a7dc03d687a'
     Title: 'Patients Needing Oxygen Supplementation, ICU Care or Died, by Age Groups'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/patients-needing-oxygen-supplementation-icu-care-or-died-by-age-groups-2022-12-10T12-42-11Z.csv'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/patients-needing-oxygen-supplementation-icu-care-or-died-by-age-groups-2022-12-16T12-49-17Z.csv'
     Format: 'CSV'
-    Coverage: '2022-11-11 to 2022-12-10'
-    Last Updated: '2022-12-10T12:42:11.585223'
+    Coverage: '2022-11-20 to 2022-12-16'
+    Last Updated: '2022-12-16T12:49:17.450160'
     Schema:
       -
         Name: 'day_of_as_of_date'
@@ -53,10 +53,10 @@ Resources:
   -
     Identifier: '99334c54-479f-472d-a6f5-fe38d2f9b1aa'
     Title: 'Week on Week Infection Ratio'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/week-on-week-infection-ratio-2022-12-10T12-43-13Z.csv'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/week-on-week-infection-ratio-2022-12-16T12-50-39Z.csv'
     Format: 'CSV'
-    Coverage: '2022-10-09 to 2022-12-10'
-    Last Updated: '2022-12-10T12:43:13.294740'
+    Coverage: '2022-10-17 to 2022-12-16'
+    Last Updated: '2022-12-16T12:50:39.025826'
     Schema:
       -
         Name: 'pr_date'
@@ -73,10 +73,10 @@ Resources:
     Identifier: 'aa6ba85e-c256-4eef-99ca-7849c7d6f148'
     Title: 'Moving ave of deaths & active cases in ICU, per 100k population, by vaccination
       status'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/moving-ave-of-deaths-active-cases-in-icu-per-100k-population-by-vaccination-status-2022-12-10T12-44-37Z.csv'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/moving-ave-of-deaths-active-cases-in-icu-per-100k-population-by-vaccination-status-2022-12-16T12-51-35Z.csv'
     Format: 'CSV'
-    Coverage: '2022-11-13 to 2022-12-10'
-    Last Updated: '2022-12-10T12:44:37.370674'
+    Coverage: '2022-11-19 to 2022-12-16'
+    Last Updated: '2022-12-16T12:51:35.286369'
     Schema:
       -
         Name: 'as_of_date'
@@ -103,10 +103,10 @@ Resources:
   -
     Identifier: 'b5ae6ad5-1272-41f4-a4e5-23308ad6e32d'
     Title: 'Daily Adult ICU Bed Utilisation'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/daily-adult-icu-bed-utilisation-2022-12-10T12-45-58Z.csv'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/daily-adult-icu-bed-utilisation-2022-12-16T12-52-39Z.csv'
     Format: 'CSV'
-    Coverage: '2022-11-09 to 2022-12-10'
-    Last Updated: '2022-12-10T12:45:58.485444'
+    Coverage: '2022-11-17 to 2022-12-16'
+    Last Updated: '2022-12-16T12:52:39.743894'
     Schema:
       -
         Name: 'as_of_date'
@@ -127,10 +127,10 @@ Resources:
   -
     Identifier: '400a3eb4-8702-4050-9700-988bfea7a20f'
     Title: 'Epidemic Curve'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/epidemic-curve-2022-12-10T12-47-15Z.csv'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/epidemic-curve-2022-12-16T12-53-49Z.csv'
     Format: 'CSV'
-    Coverage: '2020-01-23 to 2022-12-10'
-    Last Updated: '2022-12-10T12:47:15.766212'
+    Coverage: '2020-01-23 to 2022-12-16'
+    Last Updated: '2022-12-16T12:53:49.860618'
     Schema:
       -
         Name: 'date'
