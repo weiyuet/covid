@@ -57,6 +57,7 @@ week_on_week_infection_ratio %>%
   theme_classic() +
   labs(x = "", y = "",
        title = glue("Week-on-week Infection Ratio in Singapore (updated {max(week_on_week_infection_ratio$pr_date)})"),
+       subtitle = "Ratio above 1.0 means infections are continuing to rise",
        caption = "Data: data.gov.sg | Graphic: @weiyuet")
 
 #### Save image ####
