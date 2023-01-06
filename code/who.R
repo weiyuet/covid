@@ -26,9 +26,13 @@ p1 <- vaccination_data %>%
   select(country, who_region, persons_fully_vaccinated_per100) %>% 
   mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
   slice_max(order_by = persons_fully_vaccinated_per100, n = 35) %>% 
-  ggplot(aes(x = persons_fully_vaccinated_per100, y = country, fill = who_region)) +
+  ggplot(aes(x = persons_fully_vaccinated_per100,
+             y = country,
+             fill = who_region)) +
   geom_col(colour = "gray10") +
-  geom_label(aes(x = persons_fully_vaccinated_per100, y = country, label = country),
+  geom_label(aes(x = persons_fully_vaccinated_per100,
+                 y = country,
+                 label = country),
              hjust = 1,
              vjust = 0.5,
              colour = "black",
@@ -43,7 +47,8 @@ p1 <- vaccination_data %>%
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
         legend.position = "bottom") +
-  labs(x = "", y = "",
+  labs(x = "",
+       y = "",
        fill = "",
        title = "Highest Vaccination Rates")
 
@@ -104,9 +109,13 @@ case_counts %>%
                           TRUE ~ name)) %>% 
   mutate(name = fct_reorder(name, count)) %>% 
   slice_max(order_by = count, n = 20) %>% 
-  ggplot(aes(x = count, y = name, fill = who_region)) +
+  ggplot(aes(x = count,
+             y = name,
+             fill = who_region)) +
   geom_col(colour = "gray10") +
-  geom_label(aes(x = count, y = name, label = round(count, 0)),
+  geom_label(aes(x = count,
+                 y = name,
+                 label = round(count, 0)),
              hjust = 1, 
              vjust = 0.5,
              fill = NA,
@@ -116,7 +125,8 @@ case_counts %>%
   scale_fill_paletteer_d("ggsci::legacy_tron") +
   theme_classic() +
   theme(legend.position = c(0.8, 0.3)) +
-  labs(x = "", y = "",
+  labs(x = "",
+       y = "",
        fill = "WHO Region",
        title = "Highest Reported Cases in the Last 7 Days",
        subtitle = "per 100,000 population",
@@ -140,7 +150,9 @@ cases <- cases %>%
 cases %>%
   select(date_reported, who_region, new_cases) %>%
   filter(new_cases > 0) %>% 
-  ggplot(aes(x = date_reported, y = new_cases, colour = who_region)) +
+  ggplot(aes(x = date_reported,
+             y = new_cases,
+             colour = who_region)) +
   geom_line(show.legend = FALSE) +
   facet_wrap(~who_region) +
   scale_x_date(labels = label_date_short(),
@@ -149,7 +161,8 @@ cases %>%
                      expand = c(0.01, 0)) +
   scale_colour_paletteer_d("feathers::rose_crowned_fruit_dove") +
   theme_classic() +
-  labs(x = "", y = "",
+  labs(x = "",
+       y = "",
        colour = "WHO Region",
        title = glue("New COVID-19 Cases Reported (updated {max(cases$date_reported)})"),
        caption = "Data: WHO | Graphic: @weiyuet")
