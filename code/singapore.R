@@ -23,7 +23,7 @@ epidemic_curve %>%
   geom_step() +
   scale_x_date(expand = c(0.01, 0),
                labels = label_date_short(),
-               date_breaks = "3 months") +
+               date_breaks = "2 months") +
   scale_y_continuous(expand = c(0.01, 0),
                      labels = label_number(big.mark = ","),
                      limits = c(0, 30000),
@@ -36,7 +36,7 @@ epidemic_curve %>%
        y = "",
        colour = "",
        title = glue("COVID-19 Epidemic Curve (updated {max(epidemic_curve$date)})"),
-       caption = "Data: data.gov.sg | Graphic: @weiyuet")
+       caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet")
 
 #### Save image ####
 ggsave("figures/covid-epidemic-curve-sg.png", width = 8, height = 5)
@@ -63,7 +63,7 @@ week_on_week_infection_ratio %>%
        y = "",
        title = glue("Week-on-week Infection Ratio in Singapore (updated {max(week_on_week_infection_ratio$pr_date)})"),
        subtitle = "Ratio above 1.0 means infections are continuing to rise",
-       caption = "Data: data.gov.sg | Graphic: @weiyuet")
+       caption = "Data: Ministry of Health (data.gov.sg) | Graphic: @weiyuet")
 
 #### Save image ####
 ggsave("figures/week-on-week-infection-ratio.png", width = 7, height = 5)
