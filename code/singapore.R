@@ -26,7 +26,6 @@ epidemic_curve %>%
                date_breaks = "2 months") +
   scale_y_continuous(expand = c(0.01, 0),
                      labels = label_number(big.mark = ","),
-                     limits = c(0, 30000),
                      breaks = seq(0, 30000, 5000)) +
   scale_colour_paletteer_d("ggsci::springfield_simpsons",
                            guide = guide_legend(reverse = TRUE)) +

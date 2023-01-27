@@ -151,9 +151,8 @@ cases %>%
   select(date_reported, who_region, new_cases) %>%
   filter(new_cases > 0) %>% 
   ggplot(aes(x = date_reported,
-             y = new_cases,
-             colour = who_region)) +
-  geom_line(show.legend = FALSE) +
+             y = new_cases)) +
+  geom_step(show.legend = FALSE) +
   facet_wrap(~who_region) +
   scale_x_date(labels = label_date_short(),
                date_breaks = "6 months") +

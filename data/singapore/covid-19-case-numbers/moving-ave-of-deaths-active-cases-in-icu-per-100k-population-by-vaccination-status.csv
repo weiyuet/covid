@@ -1,6 +1,4 @@
 as_of_date,clinicalstatus,vaccination_status,count_of_case
-2022-12-28,Deceased (based on date of death),Up-to-Date Vaccination,0.0
-2022-12-29,Deceased (based on date of death),Up-to-Date Vaccination,0.0
 2022-12-30,Deceased (based on date of death),Up-to-Date Vaccination,0.0
 2022-12-31,Deceased (based on date of death),Up-to-Date Vaccination,0.0
 2023-01-01,Deceased (based on date of death),Up-to-Date Vaccination,0.01
@@ -27,8 +25,8 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2023-01-22,Deceased (based on date of death),Up-to-Date Vaccination,0.0
 2023-01-23,Deceased (based on date of death),Up-to-Date Vaccination,0.0
 2023-01-24,Deceased (based on date of death),Up-to-Date Vaccination,0.0
-2022-12-28,Deceased (based on date of death),No Minimum Protection,0.0
-2022-12-29,Deceased (based on date of death),No Minimum Protection,0.0
+2023-01-25,Deceased (based on date of death),Up-to-Date Vaccination,0.0
+2023-01-26,Deceased (based on date of death),Up-to-Date Vaccination,0.0
 2022-12-30,Deceased (based on date of death),No Minimum Protection,0.0
 2022-12-31,Deceased (based on date of death),No Minimum Protection,0.0
 2023-01-01,Deceased (based on date of death),No Minimum Protection,0.0
@@ -55,8 +53,8 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2023-01-22,Deceased (based on date of death),No Minimum Protection,0.01
 2023-01-23,Deceased (based on date of death),No Minimum Protection,0.01
 2023-01-24,Deceased (based on date of death),No Minimum Protection,0.01
-2022-12-28,Deceased (based on date of death),Minimum Protection,0.0
-2022-12-29,Deceased (based on date of death),Minimum Protection,0.0
+2023-01-25,Deceased (based on date of death),No Minimum Protection,0.01
+2023-01-26,Deceased (based on date of death),No Minimum Protection,0.0
 2022-12-30,Deceased (based on date of death),Minimum Protection,0.0
 2022-12-31,Deceased (based on date of death),Minimum Protection,0.0
 2023-01-01,Deceased (based on date of death),Minimum Protection,0.01
@@ -83,8 +81,8 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2023-01-22,Deceased (based on date of death),Minimum Protection,0.0
 2023-01-23,Deceased (based on date of death),Minimum Protection,0.0
 2023-01-24,Deceased (based on date of death),Minimum Protection,0.0
-2022-12-28,ICU,Up-to-Date Vaccination,0.09
-2022-12-29,ICU,Up-to-Date Vaccination,0.07
+2023-01-25,Deceased (based on date of death),Minimum Protection,0.0
+2023-01-26,Deceased (based on date of death),Minimum Protection,0.0
 2022-12-30,ICU,Up-to-Date Vaccination,0.06
 2022-12-31,ICU,Up-to-Date Vaccination,0.05
 2023-01-01,ICU,Up-to-Date Vaccination,0.04
@@ -111,8 +109,8 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2023-01-22,ICU,Up-to-Date Vaccination,0.03
 2023-01-23,ICU,Up-to-Date Vaccination,0.03
 2023-01-24,ICU,Up-to-Date Vaccination,0.02
-2022-12-28,ICU,No Minimum Protection,0.13
-2022-12-29,ICU,No Minimum Protection,0.17
+2023-01-25,ICU,Up-to-Date Vaccination,0.02
+2023-01-26,ICU,Up-to-Date Vaccination,0.01
 2022-12-30,ICU,No Minimum Protection,0.2
 2022-12-31,ICU,No Minimum Protection,0.21
 2023-01-01,ICU,No Minimum Protection,0.21
@@ -139,8 +137,8 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2023-01-22,ICU,No Minimum Protection,0.04
 2023-01-23,ICU,No Minimum Protection,0.04
 2023-01-24,ICU,No Minimum Protection,0.04
-2022-12-28,ICU,Minimum Protection,0.07
-2022-12-29,ICU,Minimum Protection,0.05
+2023-01-25,ICU,No Minimum Protection,0.06
+2023-01-26,ICU,No Minimum Protection,0.07
 2022-12-30,ICU,Minimum Protection,0.04
 2022-12-31,ICU,Minimum Protection,0.04
 2023-01-01,ICU,Minimum Protection,0.03
@@ -167,3 +165,5 @@ as_of_date,clinicalstatus,vaccination_status,count_of_case
 2023-01-22,ICU,Minimum Protection,0.02
 2023-01-23,ICU,Minimum Protection,0.02
 2023-01-24,ICU,Minimum Protection,0.02
+2023-01-25,ICU,Minimum Protection,0.01
+2023-01-26,ICU,Minimum Protection,0.01
