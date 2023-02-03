@@ -30,7 +30,7 @@ epidemic_curve %>%
   scale_colour_paletteer_d("ggsci::springfield_simpsons",
                            guide = guide_legend(reverse = TRUE)) +
   theme_classic() +
-  theme(legend.position = c(0.9, 0.9)) +
+  theme(legend.position = "bottom") +
   labs(x = "",
        y = "",
        colour = "",
