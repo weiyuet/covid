@@ -128,7 +128,7 @@ case_counts %>%
   labs(x = "",
        y = "",
        fill = "WHO Region",
-       title = "Highest Reported Cases in the Last 7 Days",
+       title = "Newly Reported Cases in the Last 7 Days",
        subtitle = "per 100,000 population",
        caption = "Data: WHO | Graphic: @weiyuet")
 

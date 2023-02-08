@@ -1,6 +1,6 @@
-###########################
-# COVID Data from SG Govt #
-###########################
+##################################
+# COVID Data from Singapore Govt #
+##################################
 
 #### Setup ####
 library(tidyverse)
@@ -23,7 +23,7 @@ epidemic_curve %>%
   geom_step() +
   scale_x_date(expand = c(0.01, 0),
                labels = label_date_short(),
-               date_breaks = "2 months") +
+               date_breaks = "3 months") +
   scale_y_continuous(expand = c(0.01, 0),
                      labels = label_number(big.mark = ","),
                      breaks = seq(0, 30000, 5000)) +
