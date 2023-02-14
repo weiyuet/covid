@@ -28,6 +28,20 @@ epidemic_curve %>%
                      breaks = seq(0, 30000, 5000)) +
   scale_colour_paletteer_d("ggsci::springfield_simpsons",
                            guide = guide_legend(reverse = TRUE)) +
+  annotate(geom = "text",
+           x = as.Date("2020-05-01"),
+           y = 4000,
+           label = "Initial wave",
+           size = 4) +
+  annotate(geom = "text",
+           x = as.Date("2021-05-01"),
+           y = 2000,
+           label = "Delta wave?",
+           size = 4) +
+  annotate(geom = "text",
+           x = as.Date("2022-04-15"),
+           y = 27000,
+           label = "Omicron waves") +
   labs(x = "",
        y = "",
        colour = "",
