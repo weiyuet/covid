@@ -17,11 +17,13 @@ library(glue)
 #### Load data vaccination ####
 vaccination_data <- read_csv("data/who/vaccination-data.csv")
 
-#### Column names to lower case ####
+#### Wrangle ####
+# Column names to lower case
 vaccination_data <- vaccination_data %>% 
   clean_names()
 
-#### Which countries have the highest vaccination rates? ####
+#### Visualize ####
+# Which countries have the highest vaccination rates?
 p1 <- vaccination_data %>%
   select(country, who_region, persons_fully_vaccinated_per100) %>% 
   mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
@@ -52,7 +54,7 @@ p1 <- vaccination_data %>%
        fill = "",
        title = "Highest Vaccination Rates")
 
-#### Which countries have the lowest vaccination rates? ####
+# Which countries have the lowest vaccination rates?
 p2 <- vaccination_data %>%
   select(country, who_region, persons_fully_vaccinated_per100) %>% 
   mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
@@ -79,6 +81,7 @@ p2 <- vaccination_data %>%
        fill = "",
        title = "Lowest Vaccination Rates")
 
+# Combine plots
 p <- p1 | p2
 
 p + plot_annotation(title = "Persons Fully Vaccinated per 100 Population",
@@ -94,15 +97,17 @@ ggsave("figures/country-vaccination-rates.png", width = 7, height = 7)
 #### Load data case counts ####
 case_counts <- read_csv("data/who/WHO-COVID-19-global-table-data.csv")
 
-#### Column names to lower case ####
+#### Wrangle ####
+# Column names to lower case
 case_counts <- case_counts %>% 
   clean_names()
 
-#### Data to tidy format ####
+# Data to tidy format
 case_counts <- case_counts %>% 
   pivot_longer(cols = cases_cumulative_total:deaths_newly_reported_in_last_24_hours, names_to = "case_type", values_to = "count")
 
-#### Which countries have highest reported cases in the last 7 days? ####
+#### Visualize ####
+# Which countries have highest reported cases in the last 7 days?
 case_counts %>% 
   filter(case_type == "cases_newly_reported_in_last_7_days_per_100000_population") %>% 
   mutate(name = case_when(name == "Micronesia (Federated States of)" ~ "Micronesia",
@@ -142,11 +147,13 @@ ggsave("figures/new-cases-last-seven-days.png", width = 7, height = 7)
 #### Load data case time series ####
 cases <- read_csv("data/who/WHO-COVID-19-global-data.csv")
 
-#### Column names to lower case ####
+#### Wrangle ####
+# Column names to lower case
 cases <- cases %>% 
   clean_names()
 
-#### Which regions are reporting the most number of new cases? ####
+#### Visualize ####
+# Which regions are reporting the most number of new cases?
 cases %>%
   select(date_reported, who_region, new_cases) %>%
   filter(new_cases > 0) %>% 
