@@ -9,10 +9,13 @@ Data:
   
   - [`COVID-19 Open Data - Google Health`](https://health.google.com/covid-19/open-data) *As of September 15, 2022, real-time updates in this repository have been turned off.
   
-Updated: 2023-02-17
+Updated: 2023-02-18
   
 ## Epidemic Curve in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-epidemic-curve-sg.png)
+
+## Cumulative Toll in Singapore
+![](https://github.com/weiyuet/covid/blob/main/figures/covid-cumulative-sg.png)
 
 ## Week-on-week Infection Ratio in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/week-on-week-infection-ratio.png)
