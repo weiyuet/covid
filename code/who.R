@@ -104,7 +104,9 @@ case_counts <- case_counts %>%
 
 # Data to tidy format
 case_counts <- case_counts %>% 
-  pivot_longer(cols = cases_cumulative_total:deaths_newly_reported_in_last_24_hours, names_to = "case_type", values_to = "count")
+  pivot_longer(cols = cases_cumulative_total:deaths_newly_reported_in_last_24_hours,
+               names_to = "case_type",
+               values_to = "count")
 
 #### Visualize ####
 # Which countries have highest reported cases in the last 7 days?
@@ -152,20 +154,29 @@ cases <- read_csv("data/who/WHO-COVID-19-global-data.csv")
 cases <- cases %>% 
   clean_names()
 
+# Data to tidy format
+cases <- cases %>% 
+  pivot_longer(cols = 5:8,
+               names_to = "case_type",
+               values_to = "count")
+
 #### Visualize ####
 # Which regions are reporting the most number of new cases?
+case_types <- c("new_cases")
+
 cases %>%
-  select(date_reported, who_region, new_cases) %>%
-  filter(new_cases > 0) %>% 
+  select(date_reported, who_region, case_type, count) %>%
+  filter(case_type %in% case_types) %>% 
+  filter(case_type > 0) %>% 
   ggplot(aes(x = date_reported,
-             y = new_cases)) +
-  geom_step(show.legend = FALSE) +
-  facet_wrap(~who_region) +
+             y = count)) +
+  geom_line(show.legend = FALSE) +
+  facet_wrap(vars(who_region),
+             scales = "free_y") +
   scale_x_date(labels = label_date_short(),
                date_breaks = "6 months") +
   scale_y_continuous(labels = label_number(big.mark = ","),
                      expand = c(0.01, 0)) +
-  scale_colour_paletteer_d("feathers::rose_crowned_fruit_dove") +
   theme_classic() +
   labs(x = "",
        y = "",
@@ -175,3 +186,42 @@ cases %>%
 
 #### Save image ####
 ggsave("figures/new-cases.png", width = 7, height = 6)
+
+#### Visualize ####
+# What is the cumulative toll of COVID-19 in Singapore? (Linear scale)
+country_selected <- c("Singapore")
+case_types <- c("cumulative_cases", "cumulative_deaths")
+
+cases %>% 
+  filter(country %in% country_selected) %>%
+  filter(case_type %in% case_types) %>% 
+  ggplot(aes(x = date_reported,
+             y = count,
+             colour = case_type)) +
+  geom_step() +
+  scale_x_date(labels = label_date_short(),
+               date_breaks = "3 months") +
+  scale_y_continuous(labels = label_number(big.mark = ","),
+                     limits = c(0, 2500000)) +
+  scale_colour_paletteer_d("ggsci::default_jco",
+                           labels = c("Total Cases", "Total Deaths")) +
+  annotate(geom = "text",
+           x = as.Date(glue("{max(cases$date_reported) - 20}")),
+           y = 2222006 + 90000,
+           label = "2,222,006",
+           size = 3.5) +
+  annotate(geom = "text",
+           x = as.Date(glue("{max(cases$date_reported) - 20}")),
+           y = 1722 + 90000,
+           label ="1,722",
+           size = 3.5) +
+  labs(x = "",
+       y = "",
+       colour = "",
+       title = glue("The Cumulative Toll of COVID-19 in Singapore (Updated {max(cases$date_reported)})"),
+       caption = "Data: WHO | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(legend.position = "bottom")
+
+#### Save Image ####
+ggsave("figures/covid-cumulative-sg.png", width = 7, height = 5)
