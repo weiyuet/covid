@@ -59,7 +59,9 @@ p2 <- vaccination_data %>%
   select(country, who_region, persons_fully_vaccinated_per100) %>% 
   mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
   slice_min(order_by = persons_fully_vaccinated_per100, n = 35) %>% 
-  ggplot(aes(x = persons_fully_vaccinated_per100, y = country, fill = who_region)) +
+  ggplot(aes(x = persons_fully_vaccinated_per100,
+             y = country,
+             fill = who_region)) +
   geom_col(colour = "gray10") +
   geom_label(aes(x = persons_fully_vaccinated_per100, y = country, label = country),
              hjust = 1,
@@ -102,16 +104,22 @@ case_counts <- read_csv("data/who/WHO-COVID-19-global-table-data.csv")
 case_counts <- case_counts %>% 
   clean_names()
 
+# Convert deaths_newly_reported_in_last_24_hours to numeric
+case_counts <- case_counts %>% 
+  mutate(deaths_newly_reported_in_last_24_hours = as.numeric(deaths_newly_reported_in_last_24_hours))
+
 # Data to tidy format
 case_counts <- case_counts %>% 
-  pivot_longer(cols = cases_cumulative_total:deaths_newly_reported_in_last_24_hours,
+  pivot_longer(cols = 3:12,
                names_to = "case_type",
                values_to = "count")
 
 #### Visualize ####
 # Which countries have highest reported cases in the last 7 days?
+case_types <- c("cases_newly_reported_in_last_7_days_per_100000_population")
+
 case_counts %>% 
-  filter(case_type == "cases_newly_reported_in_last_7_days_per_100000_population") %>% 
+  filter(case_type %in% case_types) %>% 
   mutate(name = case_when(name == "Micronesia (Federated States of)" ~ "Micronesia",
                           TRUE ~ name)) %>% 
   mutate(name = fct_reorder(name, count)) %>% 
