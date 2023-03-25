@@ -27,7 +27,7 @@ vaccination_data <- vaccination_data %>%
 p1 <- vaccination_data %>%
   select(country, who_region, persons_fully_vaccinated_per100) %>% 
   mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
-  slice_max(order_by = persons_fully_vaccinated_per100, n = 35) %>% 
+  slice_max(order_by = persons_fully_vaccinated_per100, n = 30) %>% 
   ggplot(aes(x = persons_fully_vaccinated_per100,
              y = country,
              fill = who_region)) +
@@ -58,12 +58,14 @@ p1 <- vaccination_data %>%
 p2 <- vaccination_data %>%
   select(country, who_region, persons_fully_vaccinated_per100) %>% 
   mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
-  slice_min(order_by = persons_fully_vaccinated_per100, n = 35) %>% 
+  slice_min(order_by = persons_fully_vaccinated_per100, n = 30) %>% 
   ggplot(aes(x = persons_fully_vaccinated_per100,
              y = country,
              fill = who_region)) +
   geom_col(colour = "gray10") +
-  geom_label(aes(x = persons_fully_vaccinated_per100, y = country, label = country),
+  geom_label(aes(x = persons_fully_vaccinated_per100,
+                 y = country,
+                 label = country),
              hjust = 1,
              vjust = 0.5,
              colour = "black",
@@ -200,6 +202,11 @@ ggsave("figures/new-cases.png", width = 7, height = 6)
 country_selected <- c("Singapore")
 case_types <- c("cumulative_cases", "cumulative_deaths")
 
+# Check latest numbers
+cases %>% 
+  filter(country %in% country_selected) %>%
+  filter(case_type %in% case_types) %>% tail()
+
 cases %>% 
   filter(country %in% country_selected) %>%
   filter(case_type %in% case_types) %>% 
@@ -215,8 +222,8 @@ cases %>%
                            labels = c("Total Cases", "Total Deaths")) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 2222006 + 90000,
-           label = "2,222,006",
+           y = 2245348 + 90000,
+           label = "2,245,348",
            size = 3.5) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
