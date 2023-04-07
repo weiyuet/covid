@@ -43,16 +43,17 @@ p1 <- vaccination_data %>%
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
                      breaks = seq(0, 120, 20)) +
-  scale_fill_paletteer_d("feathers::rose_crowned_fruit_dove",
-                         direction = -1) +
+  scale_fill_paletteer_d("ggsci::legacy_tron",
+                         direction = 1) +
+  labs(x = "",
+       y = "",
+       fill = "",
+       title = "Highest Vaccination Rates") +
   theme_classic() +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
         legend.position = "bottom") +
-  labs(x = "",
-       y = "",
-       fill = "",
-       title = "Highest Vaccination Rates")
+  guides(fill = guide_legend(nrow = 2))
 
 # Which countries have the lowest vaccination rates?
 p2 <- vaccination_data %>%
@@ -74,16 +75,17 @@ p2 <- vaccination_data %>%
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
                      breaks = seq(0, 25, 5)) +
-  scale_fill_paletteer_d("feathers::rose_crowned_fruit_dove", 
-                         direction = -1) +
+  scale_fill_paletteer_d("ggsci::legacy_tron", 
+                         direction = 1) +
+  labs(x = "",
+       y = "",
+       fill = "",
+       title = "Lowest Vaccination Rates") +
   theme_classic() +
   theme(axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
         legend.position = "bottom") +
-  guides(fill = guide_legend(nrow = 2)) +
-  labs(x = "", y = "",
-       fill = "",
-       title = "Lowest Vaccination Rates")
+  guides(fill = guide_legend(nrow = 2))
 
 # Combine plots
 p <- p1 | p2
@@ -140,14 +142,14 @@ case_counts %>%
              size = 3) +
   scale_x_continuous(expand = c(0.01, 0)) +
   scale_fill_paletteer_d("ggsci::legacy_tron") +
-  theme_classic() +
-  theme(legend.position = c(0.8, 0.3)) +
   labs(x = "",
        y = "",
        fill = "WHO Region",
        title = "Newly Reported Cases in the Last 7 Days",
        subtitle = "per 100,000 population",
-       caption = "Data: WHO | Graphic: @weiyuet")
+       caption = "Data: WHO | Graphic: @weiyuet") +
+  theme_classic() +
+  theme(legend.position = c(0.8, 0.3))
 
 #### Save image ####
 ggsave("figures/new-cases-last-seven-days.png", width = 7, height = 7)
@@ -187,12 +189,12 @@ cases %>%
                date_breaks = "6 months") +
   scale_y_continuous(labels = label_number(big.mark = ","),
                      expand = c(0.01, 0)) +
-  theme_classic() +
   labs(x = "",
        y = "",
        colour = "WHO Region",
        title = glue("New COVID-19 Cases Reported (updated {max(cases$date_reported)})"),
-       caption = "Data: WHO | Graphic: @weiyuet")
+       caption = "Data: WHO | Graphic: @weiyuet") +
+  theme_classic()
 
 #### Save image ####
 ggsave("figures/new-cases.png", width = 7, height = 6)
@@ -222,8 +224,8 @@ cases %>%
                            labels = c("Total Cases", "Total Deaths")) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 2255812 + 90000,
-           label = "2,255,812",
+           y = 2270279 + 90000,
+           label = "2,270,279",
            size = 3.5) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
