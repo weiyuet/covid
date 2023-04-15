@@ -93,7 +93,7 @@ p <- p1 | p2
 p + plot_annotation(title = "Persons Fully Vaccinated per 100 Population",
                     caption = "Data: WHO | Graphic: @weiyuet")
 
-#### Save image ####
+#### Save Image ####
 ggsave("figures/country-vaccination-rates.png", width = 7, height = 7)
 
 ###############
@@ -196,7 +196,7 @@ cases %>%
        caption = "Data: WHO | Graphic: @weiyuet") +
   theme_classic()
 
-#### Save image ####
+#### Save Image ####
 ggsave("figures/new-cases.png", width = 7, height = 6)
 
 #### Visualize ####
@@ -207,7 +207,8 @@ case_types <- c("cumulative_cases", "cumulative_deaths")
 # Check latest numbers
 cases %>% 
   filter(country %in% country_selected) %>%
-  filter(case_type %in% case_types) %>% tail()
+  filter(case_type %in% case_types) %>% 
+  tail()
 
 cases %>% 
   filter(country %in% country_selected) %>%
@@ -218,14 +219,13 @@ cases %>%
   geom_step() +
   scale_x_date(labels = label_date_short(),
                date_breaks = "3 months") +
-  scale_y_continuous(labels = label_number(big.mark = ","),
-                     limits = c(0, 2500000)) +
+  scale_y_continuous(labels = label_number(big.mark = ",")) +
   scale_colour_paletteer_d("ggsci::default_jco",
                            labels = c("Total Cases", "Total Deaths")) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 2270279 + 90000,
-           label = "2,270,279",
+           y = 2298689 + 90000,
+           label = "2,298,689",
            size = 3.5) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
