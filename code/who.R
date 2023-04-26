@@ -224,8 +224,8 @@ cases %>%
                            labels = c("Total Cases", "Total Deaths")) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 2298689 + 90000,
-           label = "2,298,689",
+           y = 2314707 + 90000,
+           label = "2,314,707",
            size = 3.5) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
