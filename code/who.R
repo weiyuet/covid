@@ -26,6 +26,7 @@ vaccination_data <- vaccination_data %>%
 # Which countries have the highest vaccination rates?
 p1 <- vaccination_data %>%
   select(country, who_region, persons_fully_vaccinated_per100) %>% 
+  filter(persons_fully_vaccinated_per100 < 100) %>% 
   mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
   slice_max(order_by = persons_fully_vaccinated_per100, n = 30) %>% 
   ggplot(aes(x = persons_fully_vaccinated_per100,
@@ -224,14 +225,14 @@ cases %>%
                            labels = c("Total Cases", "Total Deaths")) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 2314707 + 90000,
-           label = "2,314,707",
-           size = 3.5) +
+           y = 2340779 + 90000,
+           label = "2,340,779",
+           size = 3) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
            y = 1722 + 90000,
            label ="1,722",
-           size = 3.5) +
+           size = 3) +
   labs(x = "",
        y = "",
        colour = "",
