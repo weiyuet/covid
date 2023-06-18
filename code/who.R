@@ -10,9 +10,8 @@ library(paletteer)
 library(patchwork)
 library(glue)
 
-###############
-# Vaccination #
-###############
+#   ____________________________________________________________________________
+#   Vaccination                                                             ####
 
 #### Load data vaccination ####
 vaccination_data <- read_csv("data/who/vaccination-data.csv")
@@ -25,15 +24,15 @@ vaccination_data <- vaccination_data %>%
 #### Visualize ####
 # Which countries have the highest vaccination rates?
 p1 <- vaccination_data %>%
-  select(country, who_region, persons_fully_vaccinated_per100) %>% 
-  filter(persons_fully_vaccinated_per100 < 100) %>% 
-  mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
-  slice_max(order_by = persons_fully_vaccinated_per100, n = 30) %>% 
-  ggplot(aes(x = persons_fully_vaccinated_per100,
+  select(country, who_region, total_vaccinations_per100) %>% 
+  filter(total_vaccinations_per100 < 100) %>% 
+  mutate(country = fct_reorder(country, total_vaccinations_per100)) %>%
+  slice_max(order_by = total_vaccinations_per100, n = 30) %>% 
+  ggplot(aes(x = total_vaccinations_per100,
              y = country,
              fill = who_region)) +
   geom_col(colour = "gray10") +
-  geom_label(aes(x = persons_fully_vaccinated_per100,
+  geom_label(aes(x = total_vaccinations_per100,
                  y = country,
                  label = country),
              hjust = 1,
@@ -58,14 +57,14 @@ p1 <- vaccination_data %>%
 
 # Which countries have the lowest vaccination rates?
 p2 <- vaccination_data %>%
-  select(country, who_region, persons_fully_vaccinated_per100) %>% 
-  mutate(country = fct_reorder(country, persons_fully_vaccinated_per100)) %>%
-  slice_min(order_by = persons_fully_vaccinated_per100, n = 30) %>% 
-  ggplot(aes(x = persons_fully_vaccinated_per100,
+  select(country, who_region, total_vaccinations_per100) %>% 
+  mutate(country = fct_reorder(country, total_vaccinations_per100)) %>%
+  slice_min(order_by = total_vaccinations_per100, n = 30) %>% 
+  ggplot(aes(x = total_vaccinations_per100,
              y = country,
              fill = who_region)) +
   geom_col(colour = "gray10") +
-  geom_label(aes(x = persons_fully_vaccinated_per100,
+  geom_label(aes(x = total_vaccinations_per100,
                  y = country,
                  label = country),
              hjust = 1,
@@ -91,15 +90,16 @@ p2 <- vaccination_data %>%
 # Combine plots
 p <- p1 | p2
 
-p + plot_annotation(title = "Persons Fully Vaccinated per 100 Population",
+p + plot_annotation(title = "Total Vaccinations per 100 Population",
                     caption = "Data: WHO | Graphic: @weiyuet")
 
 #### Save Image ####
-ggsave("figures/country-vaccination-rates.png", width = 7, height = 7)
+ggsave("figures/country-vaccination-rates.png",
+       width = 7,
+       height = 7)
 
-###############
-# Case Counts #
-###############
+#   ____________________________________________________________________________
+#   Case Counts                                                             ####
 
 #### Load data case counts ####
 case_counts <- read_csv("data/who/WHO-COVID-19-global-table-data.csv")
@@ -153,11 +153,12 @@ case_counts %>%
   theme(legend.position = c(0.8, 0.3))
 
 #### Save image ####
-ggsave("figures/new-cases-last-seven-days.png", width = 7, height = 7)
+ggsave("figures/new-cases-last-seven-days.png",
+       width = 7,
+       height = 7)
 
-####################
-# Case Time Series #
-####################
+#   ____________________________________________________________________________
+#   Case Time Series                                                        ####
 
 #### Load data case time series ####
 cases <- read_csv("data/who/WHO-COVID-19-global-data.csv")
@@ -198,7 +199,9 @@ cases %>%
   theme_classic()
 
 #### Save Image ####
-ggsave("figures/new-cases.png", width = 7, height = 6)
+ggsave("figures/new-cases.png",
+       width = 7,
+       height = 6)
 
 #### Visualize ####
 # What is the cumulative toll of COVID-19 in Singapore? (Linear scale)
@@ -225,8 +228,8 @@ cases %>%
                            labels = c("Total Cases", "Total Deaths")) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 2340779 + 90000,
-           label = "2,340,779",
+           y = 2482839 + 90000,
+           label = "2,482,839",
            size = 3) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
@@ -242,4 +245,6 @@ cases %>%
   theme(legend.position = "bottom")
 
 #### Save Image ####
-ggsave("figures/covid-cumulative-sg.png", width = 7, height = 5)
+ggsave("figures/covid-cumulative-sg.png",
+       width = 7,
+       height = 5)
