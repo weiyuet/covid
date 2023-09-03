@@ -25,13 +25,12 @@ vaccination_data <- vaccination_data %>%
 # Which countries have the highest vaccination rates?
 p1 <- vaccination_data %>%
   select(country, who_region, total_vaccinations_per100) %>% 
-  filter(total_vaccinations_per100 < 100) %>% 
-  mutate(country = fct_reorder(country, total_vaccinations_per100)) %>%
-  slice_max(order_by = total_vaccinations_per100, n = 30) %>% 
+  arrange(desc(total_vaccinations_per100)) %>% 
+  slice_max(order_by = total_vaccinations_per100, n = 25) %>% 
   ggplot(aes(x = total_vaccinations_per100,
              y = country,
              fill = who_region)) +
-  geom_col(colour = "gray10") +
+  geom_col(colour = "black") +
   geom_label(aes(x = total_vaccinations_per100,
                  y = country,
                  label = country),
@@ -42,7 +41,7 @@ p1 <- vaccination_data %>%
              label.size = NA,
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
-                     breaks = seq(0, 120, 20)) +
+                     breaks = seq(0, 100, 20)) +
   scale_fill_paletteer_d("ggsci::legacy_tron",
                          direction = 1) +
   labs(x = "",
@@ -58,12 +57,13 @@ p1 <- vaccination_data %>%
 # Which countries have the lowest vaccination rates?
 p2 <- vaccination_data %>%
   select(country, who_region, total_vaccinations_per100) %>% 
+  filter(total_vaccinations_per100 < 100) %>% 
   mutate(country = fct_reorder(country, total_vaccinations_per100)) %>%
-  slice_min(order_by = total_vaccinations_per100, n = 30) %>% 
+  slice_min(order_by = total_vaccinations_per100, n = 25) %>% 
   ggplot(aes(x = total_vaccinations_per100,
              y = country,
              fill = who_region)) +
-  geom_col(colour = "gray10") +
+  geom_col(colour = "black") +
   geom_label(aes(x = total_vaccinations_per100,
                  y = country,
                  label = country),
@@ -74,7 +74,7 @@ p2 <- vaccination_data %>%
              label.size = NA,
              size = 3) +
   scale_x_continuous(expand = c(0, 0),
-                     breaks = seq(0, 25, 5)) +
+                     breaks = seq(0, 100, 20)) +
   scale_fill_paletteer_d("ggsci::legacy_tron", 
                          direction = 1) +
   labs(x = "",
@@ -228,13 +228,13 @@ cases %>%
                            labels = c("Total Cases", "Total Deaths")) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 2482839 + 90000,
-           label = "2,482,839",
+           y = 2555372 + 90000,
+           label = "2,555,372",
            size = 3) +
   annotate(geom = "text",
            x = as.Date(glue("{max(cases$date_reported) - 20}")),
-           y = 1722 + 90000,
-           label ="1,722",
+           y = 1872 + 90000,
+           label ="1,872",
            size = 3) +
   labs(x = "",
        y = "",
