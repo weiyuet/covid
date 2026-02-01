@@ -1,16 +1,16 @@
-# covid
+# Covid
 
-Wong Wei Yuet 2022-09-29
+Created: 2022-09-29
 
-Data:
+Updated: 2023-09-03
+
+Data sources:
   - [`WHO`](https://covid19.who.int/data)
   
   - [`Government of Singapore`](https://data.gov.sg/dataset/covid-19-case-numbers)
   
   - [`COVID-19 Open Data - Google Health`](https://health.google.com/covid-19/open-data) *As of September 15, 2022, real-time updates in this repository have been turned off.
   
-Updated: 2023-09-03
-
 ## Epidemic Curve in Singapore
 ![](https://github.com/weiyuet/covid/blob/main/figures/covid-epidemic-curve-sg.png)
 
@@ -32,4 +32,4 @@ Updated: 2023-09-03
 ## Vaccination Rates
 ![](https://github.com/weiyuet/covid/blob/main/figures/country-vaccination-rates.png)
 
-EOL
+End
